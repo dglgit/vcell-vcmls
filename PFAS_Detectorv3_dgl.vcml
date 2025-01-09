@@ -1,0 +1,2839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This biomodel was generated in VCML Version Rel_Version_7.7.0_build_0-->
+<vcml xmlns="http://sourceforge.net/projects/vcell/vcml" Version="Rel_Version_7.7.0_build_0">
+  <BioModel Name="PFAS Detectorv3_dgl">
+    <Annotation>cloned from 'PFAS Detectorv2' owned by user seriously</Annotation>
+    <Model Name="model">
+      <Annotation>cloned from 'model' owned by user seriously</Annotation>
+      <ModelParameters>
+        <Parameter Name="burstSize1" Role="user defined" Unit="1">20.0</Parameter>
+      </ModelParameters>
+      <Compound Name="s0" />
+      <Compound Name="s1" />
+      <Compound Name="s2" />
+      <Compound Name="s3" />
+      <Compound Name="s5" />
+      <Compound Name="s6" />
+      <Compound Name="s7" />
+      <Compound Name="s8" />
+      <Compound Name="s9" />
+      <Compound Name="s10" />
+      <Compound Name="s4" />
+      <Compound Name="s12" />
+      <Compound Name="s13" />
+      <Compound Name="s14" />
+      <Compound Name="s15" />
+      <Compound Name="s16" />
+      <Compound Name="s17" />
+      <Compound Name="s18" />
+      <Compound Name="s19" />
+      <Compound Name="s20" />
+      <Compound Name="s21" />
+      <Compound Name="s22" />
+      <Compound Name="s23" />
+      <Compound Name="s24" />
+      <Compound Name="s25" />
+      <Compound Name="s11" />
+      <Feature Name="Environment" KeyValue="266648538" />
+      <Feature Name="Cell" KeyValue="266648536" />
+      <LocalizedCompound Name="LuxRinCell" CompoundRef="s0" Structure="Cell" OverrideName="true" KeyValue="266648540">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxR" />
+            <ComponentPattern MolecularComponent="_3oc6hsl" BondType="-" />
+            <ComponentPattern MolecularComponent="pLuxOperon" BondType="-" />
+            <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="-" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="luxR_gene" CompoundRef="s1" Structure="Cell" OverrideName="true" KeyValue="266648541">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="luxR_gene" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="PFAS_outside" CompoundRef="s2" Structure="Environment" OverrideName="true" KeyValue="266648542" />
+      <LocalizedCompound Name="_3OC6HSL_out" CompoundRef="s3" Structure="Environment" OverrideName="true" KeyValue="266648543" />
+      <LocalizedCompound Name="_3OC6HSL_inside" CompoundRef="s5" Structure="Cell" OverrideName="true" KeyValue="266648544">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="_3OC6HSL" />
+            <ComponentPattern MolecularComponent="Bind" BondType="-" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="GFP_Inside" CompoundRef="s6" Structure="Cell" OverrideName="true" KeyValue="266648545">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="GFP" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="pLux_operon" CompoundRef="s7" Structure="Cell" OverrideName="true" KeyValue="266648546">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="pLUX_Operon" />
+            <ComponentPattern MolecularComponent="LuxR" BondType="-" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="PFAS_Inside" CompoundRef="s8" Structure="Cell" OverrideName="true" KeyValue="266648547">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="PFOA" />
+            <ComponentPattern MolecularComponent="prmA_Bind" BondType="-" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="prmA_Operon" CompoundRef="s9" Structure="Cell" OverrideName="true" KeyValue="266648548">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="prmA_Operon" />
+            <ComponentPattern MolecularComponent="Messenger" BondType="-" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="LuxI" CompoundRef="s10" Structure="Cell" OverrideName="true" KeyValue="266648549">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxI" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="DegradedGFP" CompoundRef="s4" Structure="Cell" OverrideName="true" KeyValue="266648550">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="Degraded" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="DegradedLuxI" CompoundRef="s12" Structure="Cell" OverrideName="true" KeyValue="266648551">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="Degraded" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="DegradedLuxR" CompoundRef="s13" Structure="Cell" OverrideName="true" KeyValue="266648552">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="Degraded" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="LuxR_pLux_Cplx" CompoundRef="s14" Structure="Cell" OverrideName="true" KeyValue="266648553">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxR" />
+            <ComponentPattern MolecularComponent="_3oc6hsl" BondType="3">
+              <Bond MolecularTypePattern="_3OC6HSL" ComponentPattern="Bind" />
+            </ComponentPattern>
+            <ComponentPattern MolecularComponent="pLuxOperon" BondType="1">
+              <Bond MolecularTypePattern="pLUX_Operon" ComponentPattern="LuxR" />
+            </ComponentPattern>
+            <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="2">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="AHL_LuxR_dimer" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="2">
+            <MolecularType Name="pLUX_Operon" />
+            <ComponentPattern MolecularComponent="LuxR" BondType="1">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="pLuxOperon" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="3">
+            <MolecularType Name="LuxR" />
+            <ComponentPattern MolecularComponent="_3oc6hsl" BondType="4">
+              <Bond MolecularTypePattern="_3OC6HSL" ComponentPattern="Bind" />
+            </ComponentPattern>
+            <ComponentPattern MolecularComponent="pLuxOperon" BondType="-" />
+            <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="2">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="AHL_LuxR_dimer" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="4">
+            <MolecularType Name="_3OC6HSL" />
+            <ComponentPattern MolecularComponent="Bind" BondType="3">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="_3oc6hsl" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="5">
+            <MolecularType Name="_3OC6HSL" />
+            <ComponentPattern MolecularComponent="Bind" BondType="4">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="_3oc6hsl" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="PFOA_prmA_Cplx" CompoundRef="s15" Structure="Cell" OverrideName="true" KeyValue="266648554">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="PFOA" />
+            <ComponentPattern MolecularComponent="prmA_Bind" BondType="1">
+              <Bond MolecularTypePattern="prmA_Operon" ComponentPattern="Messenger" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="2">
+            <MolecularType Name="prmA_Operon" />
+            <ComponentPattern MolecularComponent="Messenger" BondType="1">
+              <Bond MolecularTypePattern="PFOA" ComponentPattern="prmA_Bind" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="LuxI_mRNA" CompoundRef="s16" Structure="Cell" OverrideName="true" KeyValue="266648555">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxI_mRNA" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="GFP_mRNA" CompoundRef="s17" Structure="Cell" OverrideName="true" KeyValue="266648556">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="GFP_mRNA" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="LuxR_mRNA" CompoundRef="s18" Structure="Cell" OverrideName="true" KeyValue="266648557">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxR_mRNA" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="DegmRNA" CompoundRef="s19" Structure="Cell" OverrideName="true" KeyValue="266648558" />
+      <LocalizedCompound Name="Degr_LuxImRNA" CompoundRef="s20" Structure="Cell" OverrideName="true" KeyValue="266648559">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="Degraded_mRNA" />
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="Deg_GFPmRNA" CompoundRef="s21" Structure="Cell" OverrideName="true" KeyValue="266648560" />
+      <LocalizedCompound Name="LuxR_3OC6HSL" CompoundRef="s22" Structure="Cell" OverrideName="true" KeyValue="266648561">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxR" />
+            <ComponentPattern MolecularComponent="_3oc6hsl" BondType="1">
+              <Bond MolecularTypePattern="_3OC6HSL" ComponentPattern="Bind" />
+            </ComponentPattern>
+            <ComponentPattern MolecularComponent="pLuxOperon" BondType="-" />
+            <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="-" />
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="2">
+            <MolecularType Name="_3OC6HSL" />
+            <ComponentPattern MolecularComponent="Bind" BondType="1">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="_3oc6hsl" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="DegradedLuxR_AHL" CompoundRef="s23" Structure="Cell" OverrideName="true" KeyValue="266648562" />
+      <LocalizedCompound Name="LuxR_3OC6HSL_dimer" CompoundRef="s24" Structure="Cell" OverrideName="true" KeyValue="266648563">
+        <SpeciesPattern>
+          <MolecularTypePattern Index="1">
+            <MolecularType Name="LuxR" />
+            <ComponentPattern MolecularComponent="_3oc6hsl" BondType="1">
+              <Bond MolecularTypePattern="_3OC6HSL" ComponentPattern="Bind" />
+            </ComponentPattern>
+            <ComponentPattern MolecularComponent="pLuxOperon" BondType="-" />
+            <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="3">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="AHL_LuxR_dimer" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="2">
+            <MolecularType Name="_3OC6HSL" />
+            <ComponentPattern MolecularComponent="Bind" BondType="1">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="_3oc6hsl" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="3">
+            <MolecularType Name="LuxR" />
+            <ComponentPattern MolecularComponent="_3oc6hsl" BondType="2">
+              <Bond MolecularTypePattern="_3OC6HSL" ComponentPattern="Bind" />
+            </ComponentPattern>
+            <ComponentPattern MolecularComponent="pLuxOperon" BondType="-" />
+            <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="3">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="AHL_LuxR_dimer" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+          <MolecularTypePattern Index="4">
+            <MolecularType Name="_3OC6HSL" />
+            <ComponentPattern MolecularComponent="Bind" BondType="2">
+              <Bond MolecularTypePattern="LuxR" ComponentPattern="_3oc6hsl" />
+            </ComponentPattern>
+          </MolecularTypePattern>
+        </SpeciesPattern>
+      </LocalizedCompound>
+      <LocalizedCompound Name="degraded_ahl" CompoundRef="s25" Structure="Cell" OverrideName="true" KeyValue="266648564" />
+      <LocalizedCompound Name="DegradedLuxR_AHL_Dimer" CompoundRef="s11" Structure="Cell" OverrideName="true" KeyValue="266648565" />
+      <SimpleReaction Structure="Cell" Name="Make_LuxR" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648566">
+        <Reactant LocalizedCompoundRef="LuxR_mRNA" Stoichiometry="1" KeyValue="266648567" />
+        <Product LocalizedCompoundRef="LuxR_mRNA" Stoichiometry="1" KeyValue="266648568" />
+        <Product LocalizedCompoundRef="LuxRinCell" Stoichiometry="1" KeyValue="266648569" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxR_mRNA) - ((Kr * LuxR_mRNA) * LuxRinCell))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">(0.00578333333333 * burstSize1 / 60.0)</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Environment" Name="_3OC6HSLdiffusion" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648570">
+        <Reactant LocalizedCompoundRef="_3OC6HSL_out" Stoichiometry="1" KeyValue="266648571" />
+        <Product LocalizedCompoundRef="_3OC6HSL_inside" Stoichiometry="1" KeyValue="266648572" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * _3OC6HSL_out) - (Kr * _3OC6HSL_inside))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">1.0</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Bind_LuxR" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648573">
+        <Reactant LocalizedCompoundRef="_3OC6HSL_inside" Stoichiometry="1" KeyValue="266648574" />
+        <Reactant LocalizedCompoundRef="LuxRinCell" Stoichiometry="1" KeyValue="266648575" />
+        <Product LocalizedCompoundRef="LuxR_3OC6HSL" Stoichiometry="1" KeyValue="266648576" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">(((Kf * _3OC6HSL_inside) * LuxRinCell) - (Kr * LuxR_3OC6HSL))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1.uM-1">1.666667</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.166667</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Express_pLux_Operon" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648577">
+        <Reactant LocalizedCompoundRef="LuxR_pLux_Cplx" Stoichiometry="1" KeyValue="266648578" />
+        <Product LocalizedCompoundRef="GFP_mRNA" Stoichiometry="1" KeyValue="266648579" />
+        <Product LocalizedCompoundRef="LuxR_pLux_Cplx" Stoichiometry="1" KeyValue="266648580" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxR_pLux_Cplx) - ((Kr * GFP_mRNA) * LuxR_pLux_Cplx))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">(50.0 / burstSize1 / 60.0)</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Environment" Name="PFAS_DiffusionAndMessenger" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648581">
+        <Reactant LocalizedCompoundRef="PFAS_outside" Stoichiometry="1" KeyValue="266648582" />
+        <Product LocalizedCompoundRef="PFAS_Inside" Stoichiometry="1" KeyValue="266648583" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * PFAS_outside) - (Kr * PFAS_Inside))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.1</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.1</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Make_LuxI" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648584">
+        <Reactant LocalizedCompoundRef="LuxI_mRNA" Stoichiometry="1" KeyValue="266648585" />
+        <Product LocalizedCompoundRef="LuxI" Stoichiometry="1" KeyValue="266648586" />
+        <Product LocalizedCompoundRef="LuxI_mRNA" Stoichiometry="1" KeyValue="266648587" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxI_mRNA) - ((Kr * LuxI) * LuxI_mRNA))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">(0.00578333333333 * burstSize1 / 60.0)</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Make_3OC6HSL" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648588">
+        <Reactant LocalizedCompoundRef="LuxI" Stoichiometry="1" KeyValue="266648589" />
+        <Product LocalizedCompoundRef="_3OC6HSL_inside" Stoichiometry="1" KeyValue="266648590" />
+        <Product LocalizedCompoundRef="LuxI" Stoichiometry="1" KeyValue="266648591" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxI) - ((Kr * _3OC6HSL_inside) * LuxI))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">(0.04 / 60.0)</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Degrade_GFP" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648592">
+        <Reactant LocalizedCompoundRef="GFP_Inside" Stoichiometry="1" KeyValue="266648593" />
+        <Product LocalizedCompoundRef="DegradedGFP" Stoichiometry="1" KeyValue="266648594" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * GFP_Inside) - (Kr * DegradedGFP))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.001153</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="DegradeLuxI" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648595">
+        <Reactant LocalizedCompoundRef="LuxI" Stoichiometry="1" KeyValue="266648596" />
+        <Product LocalizedCompoundRef="DegradedLuxI" Stoichiometry="1" KeyValue="266648597" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxI) - (Kr * DegradedLuxI))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">1.66666666667E-4</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="DegradeLuxR" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648598">
+        <Reactant LocalizedCompoundRef="LuxRinCell" Stoichiometry="1" KeyValue="266648599" />
+        <Product LocalizedCompoundRef="DegradedLuxR" Stoichiometry="1" KeyValue="266648600" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxRinCell) - (Kr * DegradedLuxR))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">3.33333333333E-5</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="PFAS_BindprmA" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648601">
+        <Reactant LocalizedCompoundRef="PFAS_Inside" Stoichiometry="1" KeyValue="266648602" />
+        <Reactant LocalizedCompoundRef="prmA_Operon" Stoichiometry="1" KeyValue="266648603" />
+        <Product LocalizedCompoundRef="PFOA_prmA_Cplx" Stoichiometry="1" KeyValue="266648604" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">(((Kf * PFAS_Inside) * prmA_Operon) - (Kr * PFOA_prmA_Cplx))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1.uM-1">1.0</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.01</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Make_LuxI_mRNA" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648605">
+        <Reactant LocalizedCompoundRef="PFOA_prmA_Cplx" Stoichiometry="1" KeyValue="266648606" />
+        <Product LocalizedCompoundRef="LuxI_mRNA" Stoichiometry="1" KeyValue="266648607" />
+        <Product LocalizedCompoundRef="PFOA_prmA_Cplx" Stoichiometry="1" KeyValue="266648608" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * PFOA_prmA_Cplx) - ((Kr * LuxI_mRNA) * PFOA_prmA_Cplx))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">(50.0 / burstSize1 / 60.0)</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Make_GFP" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648609">
+        <Reactant LocalizedCompoundRef="GFP_mRNA" Stoichiometry="1" KeyValue="266648610" />
+        <Product LocalizedCompoundRef="GFP_Inside" Stoichiometry="1" KeyValue="266648611" />
+        <Product LocalizedCompoundRef="GFP_mRNA" Stoichiometry="1" KeyValue="266648612" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * GFP_mRNA) - ((Kr * GFP_Inside) * GFP_mRNA))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.067</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Make_LuxRmRNA" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648613">
+        <Reactant LocalizedCompoundRef="luxR_gene" Stoichiometry="1" KeyValue="266648614" />
+        <Product LocalizedCompoundRef="LuxR_mRNA" Stoichiometry="1" KeyValue="266648615" />
+        <Product LocalizedCompoundRef="luxR_gene" Stoichiometry="1" KeyValue="266648616" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * luxR_gene) - ((Kr * LuxR_mRNA) * luxR_gene))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">(200.0 / burstSize1 / 60.0)</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Degrade_LuxRmRNA" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648617">
+        <Reactant LocalizedCompoundRef="LuxR_mRNA" Stoichiometry="1" KeyValue="266648618" />
+        <Product LocalizedCompoundRef="DegmRNA" Stoichiometry="1" KeyValue="266648619" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxR_mRNA) - (Kr * DegmRNA))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.00578333333333</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Deg_LuxImRNA" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648620">
+        <Reactant LocalizedCompoundRef="LuxI_mRNA" Stoichiometry="1" KeyValue="266648621" />
+        <Product LocalizedCompoundRef="Degr_LuxImRNA" Stoichiometry="1" KeyValue="266648622" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxI_mRNA) - (Kr * Degr_LuxImRNA))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.00578333333333</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Degr_GFPmRNA" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648623">
+        <Reactant LocalizedCompoundRef="GFP_mRNA" Stoichiometry="1" KeyValue="266648624" />
+        <Product LocalizedCompoundRef="Deg_GFPmRNA" Stoichiometry="1" KeyValue="266648625" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * GFP_mRNA) - (Kr * Deg_GFPmRNA))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.0042</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Degrade_LuxR_3OC" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648626">
+        <Reactant LocalizedCompoundRef="LuxR_3OC6HSL" Stoichiometry="1" KeyValue="266648627" />
+        <Product LocalizedCompoundRef="DegradedLuxR_AHL" Stoichiometry="1" KeyValue="266648628" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxR_3OC6HSL) - (Kr * DegradedLuxR_AHL))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">3.33333333333E-5</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="(AHL.LuxR)2 formation" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648629">
+        <Reactant LocalizedCompoundRef="LuxR_3OC6HSL" Stoichiometry="2" KeyValue="266648630" />
+        <Product LocalizedCompoundRef="LuxR_3OC6HSL_dimer" Stoichiometry="1" KeyValue="266648631" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * pow(LuxR_3OC6HSL,2.0)) - (Kr * LuxR_3OC6HSL_dimer))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1.uM-1">0.8333</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.01666666</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Bind_pLux" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648632">
+        <Reactant LocalizedCompoundRef="LuxR_3OC6HSL_dimer" Stoichiometry="1" KeyValue="266648633" />
+        <Reactant LocalizedCompoundRef="pLux_operon" Stoichiometry="1" KeyValue="266648634" />
+        <Product LocalizedCompoundRef="LuxR_pLux_Cplx" Stoichiometry="1" KeyValue="266648635" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">(((Kf * LuxR_3OC6HSL_dimer) * pLux_operon) - (Kr * LuxR_pLux_Cplx))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1.uM-1">0.833333333333</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.166666666667</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="prmA_leak" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648636">
+        <Reactant LocalizedCompoundRef="prmA_Operon" Stoichiometry="1" KeyValue="266648637" />
+        <Product LocalizedCompoundRef="LuxI_mRNA" Stoichiometry="1" KeyValue="266648638" />
+        <Product LocalizedCompoundRef="prmA_Operon" Stoichiometry="1" KeyValue="266648639" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * prmA_Operon) - ((Kr * LuxI_mRNA) * prmA_Operon))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.0</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="AHL_degradation" Reversible="false" FluxOption="MolecularOnly" KeyValue="266648640">
+        <Reactant LocalizedCompoundRef="_3OC6HSL_inside" Stoichiometry="1" KeyValue="266648641" />
+        <Product LocalizedCompoundRef="degraded_ahl" Stoichiometry="1" KeyValue="266648642" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * _3OC6HSL_inside) - (Kr * degraded_ahl))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">6.66666666667E-4</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="pLux_leak" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648643">
+        <Reactant LocalizedCompoundRef="pLux_operon" Stoichiometry="1" KeyValue="266648644" />
+        <Product LocalizedCompoundRef="GFP_mRNA" Stoichiometry="1" KeyValue="266648645" />
+        <Product LocalizedCompoundRef="pLux_operon" Stoichiometry="1" KeyValue="266648646" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * pLux_operon) - ((Kr * GFP_mRNA) * pLux_operon))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">0.0</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1.uM-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <SimpleReaction Structure="Cell" Name="Degrade_LuxR_AHL_dimer" Reversible="true" FluxOption="MolecularOnly" KeyValue="266648647">
+        <Reactant LocalizedCompoundRef="LuxR_3OC6HSL_dimer" Stoichiometry="1" KeyValue="266648648" />
+        <Product LocalizedCompoundRef="DegradedLuxR_AHL_Dimer" Stoichiometry="1" KeyValue="266648649" />
+        <Kinetics KineticsType="MassAction">
+          <Parameter Name="J" Role="reaction rate" Unit="uM.s-1">((Kf * LuxR_3OC6HSL_dimer) - (Kr * DegradedLuxR_AHL_Dimer))</Parameter>
+          <Parameter Name="Kf" Role="forward rate constant" Unit="s-1">3.33333333333E-5</Parameter>
+          <Parameter Name="Kr" Role="reverse rate constant" Unit="s-1">0.0</Parameter>
+        </Kinetics>
+      </SimpleReaction>
+      <RbmModelContainer>
+        <MolecularTypeList>
+          <MolecularType Name="prmA_Operon" AnchorAll="true">
+            <MolecularComponent Name="Messenger" Index="1" />
+          </MolecularType>
+          <MolecularType Name="Messenger" AnchorAll="true">
+            <MolecularComponent Name="Promoter" Index="1" />
+            <MolecularComponent Name="Site0" Index="2">
+              <AllowableState Name="Activated" />
+            </MolecularComponent>
+          </MolecularType>
+          <MolecularType Name="PFOA" AnchorAll="true">
+            <MolecularComponent Name="prmA_Bind" Index="1" />
+          </MolecularType>
+          <MolecularType Name="LuxI" AnchorAll="true" />
+          <MolecularType Name="_3OC6HSL" AnchorAll="true">
+            <MolecularComponent Name="Bind" Index="1" />
+          </MolecularType>
+          <MolecularType Name="LuxR" AnchorAll="true">
+            <MolecularComponent Name="_3oc6hsl" Index="1" />
+            <MolecularComponent Name="pLuxOperon" Index="2" />
+            <MolecularComponent Name="AHL_LuxR_dimer" Index="3" />
+          </MolecularType>
+          <MolecularType Name="luxR_gene" AnchorAll="true" />
+          <MolecularType Name="GFP" AnchorAll="true" />
+          <MolecularType Name="Precursors_to_3OC6HSL" AnchorAll="true" />
+          <MolecularType Name="pLUX_Operon" AnchorAll="true">
+            <MolecularComponent Name="LuxR" Index="1" />
+          </MolecularType>
+          <MolecularType Name="Degraded" AnchorAll="true" />
+          <MolecularType Name="GFP_mRNA" AnchorAll="true" />
+          <MolecularType Name="LuxI_mRNA" AnchorAll="true" />
+          <MolecularType Name="LuxR_mRNA" AnchorAll="true" />
+          <MolecularType Name="Degraded_mRNA" AnchorAll="true" />
+          <MolecularType Name="AHL_LuxR_Dimer" AnchorAll="true" />
+          <MolecularType Name="pLux_operon" AnchorAll="true" />
+        </MolecularTypeList>
+        <RbmObservableList>
+          <Observable Name="O0_prmA_Operon_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="prmA_Operon" />
+                <ComponentPattern MolecularComponent="Messenger" BondType="?" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_Messenger_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="Messenger" />
+                <ComponentPattern MolecularComponent="Promoter" BondType="?" />
+                <ComponentPattern MolecularComponent="Site0" Any="true" BondType="?" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_PFOA_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="PFOA" />
+                <ComponentPattern MolecularComponent="prmA_Bind" BondType="?" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_LuxI_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="LuxI" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0__3OC6HSL_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="_3OC6HSL" />
+                <ComponentPattern MolecularComponent="Bind" BondType="?" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_LuxR_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="LuxR" />
+                <ComponentPattern MolecularComponent="_3oc6hsl" BondType="?" />
+                <ComponentPattern MolecularComponent="pLuxOperon" BondType="?" />
+                <ComponentPattern MolecularComponent="AHL_LuxR_dimer" BondType="?" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_luxR_gene_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="luxR_gene" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_GFP_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="GFP" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_Precursors_to_3OC6HSL_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="Precursors_to_3OC6HSL" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_pLUX_Operon_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="pLUX_Operon" />
+                <ComponentPattern MolecularComponent="LuxR" BondType="?" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_Degraded_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="Degraded" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_GFP_mRNA_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="GFP_mRNA" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_LuxI_mRNA_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="LuxI_mRNA" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_LuxR_mRNA_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="LuxR_mRNA" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_Degraded_mRNA_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="Degraded_mRNA" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_AHL_LuxR_Dimer_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="AHL_LuxR_Dimer" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+          <Observable Name="O0_pLux_operon_tot" ObservableType="Molecules" Sequence="Multimolecular" LengthEqual="2" LengthGreater="1" Structure="Environment">
+            <SpeciesPattern>
+              <MolecularTypePattern Index="1">
+                <MolecularType Name="pLux_operon" />
+              </MolecularTypePattern>
+            </SpeciesPattern>
+          </Observable>
+        </RbmObservableList>
+      </RbmModelContainer>
+      <Diagram Name="c0" Structure="Environment">
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="Deg_GFPmRNA" LocationX="378" LocationY="54" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_3OC6HSL_dimer" LocationX="276" LocationY="170" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="GFP_Inside" LocationX="377" LocationY="130" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="DegradeLuxR" LocationX="169" LocationY="106" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxR" LocationX="129" LocationY="77" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_mRNA" LocationX="90" LocationY="22" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxI" LocationX="233" LocationY="308" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_3OC6HSL" LocationX="241" LocationY="277" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxR" LocationX="176" LocationY="62" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="PFAS_outside" LocationX="177" LocationY="304" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="AHL_degradation" LocationX="48" LocationY="204" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="(AHL.LuxR)2 formation" LocationX="225" LocationY="193" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_3OC6HSL" LocationX="164" LocationY="153" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="prmA_leak" LocationX="171" LocationY="280" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_LuxR_AHL_dimer" LocationX="271" LocationY="217" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxR_AHL" LocationX="128" LocationY="195" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxRinCell" LocationX="108" LocationY="115" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Deg_LuxImRNA" LocationX="290" LocationY="359" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxI_mRNA" LocationX="164" LocationY="338" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxI" LocationX="363" LocationY="324" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="_3OC6HSL_out" LocationX="65" LocationY="39" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="PFAS_Inside" LocationX="23" LocationY="253" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="prmA_Operon" LocationX="103" LocationY="260" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="DegradeLuxI" LocationX="350" LocationY="299" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegmRNA" LocationX="14" LocationY="126" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Bind_LuxR" LocationX="108" LocationY="155" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="_3OC6HSL_inside" LocationX="33" LocationY="169" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedGFP" LocationX="383" LocationY="180" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_LuxRmRNA" LocationX="69" LocationY="101" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Express_pLux_Operon" LocationX="265" LocationY="64" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_pLux_Cplx" LocationX="228" LocationY="101" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="_3OC6HSLdiffusion" LocationX="169" LocationY="66" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_LuxR_3OC" LocationX="186" LocationY="211" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="PFAS_DiffusionAndMessenger" LocationX="252" LocationY="286" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="degraded_ahl" LocationX="45" LocationY="227" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_GFP" LocationX="328" LocationY="137" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="luxR_gene" LocationX="22" LocationY="12" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxI_mRNA" LocationX="211" LocationY="348" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="Degr_LuxImRNA" LocationX="319" LocationY="383" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Bind_pLux" LocationX="246" LocationY="148" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="PFAS_BindprmA" LocationX="89" LocationY="298" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="pLux_operon" LocationX="276" LocationY="133" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="PFOA_prmA_Cplx" LocationX="63" LocationY="380" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="pLux_leak" LocationX="292" LocationY="92" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_GFP" LocationX="319" LocationY="200" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxR_AHL_Dimer" LocationX="317" LocationY="242" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxI" LocationX="324" LocationY="277" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxRmRNA" LocationX="34" LocationY="64" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="GFP_mRNA" LocationX="306" LocationY="38" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degr_GFPmRNA" LocationX="410" LocationY="102" />
+      </Diagram>
+      <Diagram Name="c1" Structure="Cell">
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="Deg_GFPmRNA" LocationX="378" LocationY="54" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_3OC6HSL_dimer" LocationX="276" LocationY="170" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="GFP_Inside" LocationX="377" LocationY="130" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="DegradeLuxR" LocationX="169" LocationY="106" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxR" LocationX="129" LocationY="77" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_mRNA" LocationX="90" LocationY="22" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxI" LocationX="233" LocationY="308" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_3OC6HSL" LocationX="241" LocationY="277" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxR" LocationX="176" LocationY="62" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="PFAS_outside" LocationX="177" LocationY="304" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="AHL_degradation" LocationX="48" LocationY="204" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="(AHL.LuxR)2 formation" LocationX="225" LocationY="193" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_3OC6HSL" LocationX="164" LocationY="153" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="prmA_leak" LocationX="171" LocationY="280" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_LuxR_AHL_dimer" LocationX="271" LocationY="217" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxR_AHL" LocationX="128" LocationY="195" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxRinCell" LocationX="108" LocationY="115" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Deg_LuxImRNA" LocationX="290" LocationY="359" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxI_mRNA" LocationX="164" LocationY="338" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxI" LocationX="363" LocationY="324" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="_3OC6HSL_out" LocationX="65" LocationY="39" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="PFAS_Inside" LocationX="23" LocationY="253" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="prmA_Operon" LocationX="103" LocationY="260" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="DegradeLuxI" LocationX="350" LocationY="299" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegmRNA" LocationX="14" LocationY="126" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Bind_LuxR" LocationX="108" LocationY="155" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="_3OC6HSL_inside" LocationX="33" LocationY="169" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedGFP" LocationX="383" LocationY="180" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_LuxRmRNA" LocationX="69" LocationY="101" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Express_pLux_Operon" LocationX="265" LocationY="64" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxR_pLux_Cplx" LocationX="228" LocationY="101" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="_3OC6HSLdiffusion" LocationX="169" LocationY="66" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_LuxR_3OC" LocationX="186" LocationY="211" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="PFAS_DiffusionAndMessenger" LocationX="252" LocationY="286" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="degraded_ahl" LocationX="45" LocationY="227" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_GFP" LocationX="328" LocationY="137" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="luxR_gene" LocationX="22" LocationY="12" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxI_mRNA" LocationX="211" LocationY="348" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="Degr_LuxImRNA" LocationX="319" LocationY="383" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Bind_pLux" LocationX="246" LocationY="148" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="PFAS_BindprmA" LocationX="89" LocationY="298" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="pLux_operon" LocationX="276" LocationY="133" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="PFOA_prmA_Cplx" LocationX="63" LocationY="380" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="pLux_leak" LocationX="292" LocationY="92" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degrade_GFP" LocationX="319" LocationY="200" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="DegradedLuxR_AHL_Dimer" LocationX="317" LocationY="242" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="LuxI" LocationX="324" LocationY="277" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Make_LuxRmRNA" LocationX="34" LocationY="64" />
+        <LocalizedCompoundShape NodeReferenceModeAttrTag="full" LocalizedCompoundRef="GFP_mRNA" LocationX="306" LocationY="38" />
+        <SimpleReactionShape NodeReferenceModeAttrTag="full" SimpleReactionRef="Degr_GFPmRNA" LocationX="410" LocationY="102" />
+      </Diagram>
+      <Version Name="model" KeyValue="266648508" BranchId="259530233" Archived="0" Date="19-Jan-2024 18:00:31" FromVersionable="false">
+        <Owner Name="dglVcell" Identifier="202231687" />
+        <GroupAccess Type="1" />
+        <Annotation>cloned from 'model' owned by user seriously</Annotation>
+      </Version>
+      <ModelUnitSystem VolumeSubstanceUnit="uM.um3" MembraneSubstanceUnit="molecules" LumpedReactionSubstanceUnit="molecules" VolumeUnit="um3" AreaUnit="um2" LengthUnit="um" TimeUnit="s" />
+    </Model>
+    <SimulationSpec Name="Application0" Stochastic="false" UseConcentration="true" SpringSaLaD="false" RuleBased="false" MassConservationModelReduction="false" InsufficientIterations="false" InsufficientMaxMolecules="false">
+      <NetworkConstraints RbmMaxIteration="1" RbmMaxMoleculesPerSpecies="10" RbmSpeciesLimit="800" RbmReactionsLimit="2500">
+        <MaxStoichiometry MolecularType="prmA_Operon" Integer="100" />
+        <MaxStoichiometry MolecularType="Messenger" Integer="100" />
+        <MaxStoichiometry MolecularType="PFOA" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxI" Integer="100" />
+        <MaxStoichiometry MolecularType="_3OC6HSL" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxR" Integer="100" />
+        <MaxStoichiometry MolecularType="luxR_gene" Integer="100" />
+        <MaxStoichiometry MolecularType="GFP" Integer="100" />
+        <MaxStoichiometry MolecularType="Precursors_to_3OC6HSL" Integer="100" />
+        <MaxStoichiometry MolecularType="pLUX_Operon" Integer="100" />
+        <MaxStoichiometry MolecularType="Degraded" Integer="100" />
+        <MaxStoichiometry MolecularType="GFP_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxI_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxR_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="Degraded_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="AHL_LuxR_Dimer" Integer="100" />
+        <MaxStoichiometry MolecularType="pLux_operon" Integer="100" />
+      </NetworkConstraints>
+      <Annotation>cloned from 'Application0' owned by user seriously</Annotation>
+      <Geometry Name="non-spatial2049573664" Dimension="0">
+        <Annotation>cloned from 'non-spatial2049573664' owned by user seriously</Annotation>
+        <Extent X="10.0" Y="10.0" Z="10.0" />
+        <Origin X="0.0" Y="0.0" Z="0.0" />
+        <SubVolume Name="Compartment" Handle="0" Type="Compartmental" KeyValue="259530220" />
+        <Version Name="non-spatial2049573664" KeyValue="259530216" BranchId="259530217" Archived="0" Date="15-Aug-2023 02:42:47" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'non-spatial2049573664' owned by user seriously</Annotation>
+        </Version>
+      </Geometry>
+      <GeometryContext>
+        <FeatureMapping Feature="Environment" GeometryClass="Compartment" SubVolume="Compartment" Size="50000.0">
+          <BoundariesTypes Xm="Flux" Xp="Flux" Ym="Flux" Yp="Flux" Zm="Flux" Zp="Flux" />
+        </FeatureMapping>
+        <FeatureMapping Feature="Cell" GeometryClass="Compartment" SubVolume="Compartment" Size="50000.0">
+          <BoundariesTypes Xm="Flux" Xp="Flux" Ym="Flux" Yp="Flux" Zm="Flux" Zp="Flux" />
+        </FeatureMapping>
+      </GeometryContext>
+      <ReactionContext>
+        <LocalizedCompoundSpec LocalizedCompoundRef="PFAS_outside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0033</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="_3OC6HSL_out" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxRinCell" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.00332</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="luxR_gene" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>3.0E-8</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="_3OC6HSL_inside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="GFP_Inside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="pLux_operon" ForceConstant="true" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>3.0E-8</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="PFAS_Inside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="prmA_Operon" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>3.0E-8</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxI" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedGFP" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxI" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxR" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_pLux_Cplx" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="PFOA_prmA_Cplx" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxI_mRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="GFP_mRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_mRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegmRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="Degr_LuxImRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="Deg_GFPmRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_3OC6HSL" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxR_AHL" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_3OC6HSL_dimer" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="degraded_ahl" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxR_AHL_Dimer" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialConcentration>0.0</InitialConcentration>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <ReactionSpec ReactionStepRef="Make_LuxR" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="_3OC6HSLdiffusion" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Bind_LuxR" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Express_pLux_Operon" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="PFAS_DiffusionAndMessenger" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_LuxI" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_3OC6HSL" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_GFP" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="DegradeLuxI" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="DegradeLuxR" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="PFAS_BindprmA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_LuxI_mRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_GFP" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_LuxRmRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_LuxRmRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Deg_LuxImRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degr_GFPmRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_LuxR_3OC" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="(AHL.LuxR)2 formation" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Bind_pLux" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="prmA_leak" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="AHL_degradation" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="pLux_leak" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_LuxR_AHL_dimer" ReactionMapping="included" />
+      </ReactionContext>
+      <MathDescription Name="Application0_generated">
+        <Annotation>cloned from 'Application0_generated' owned by user seriously</Annotation>
+        <Constant Name="_3OC6HSL_inside_init_uM">0.0</Constant>
+        <Constant Name="_3OC6HSL_out_init_uM">0.0</Constant>
+        <Constant Name="_F_">96485.3321</Constant>
+        <Constant Name="_F_nmol_">9.64853321E-5</Constant>
+        <Constant Name="_K_GHK_">1.0E-9</Constant>
+        <Constant Name="_N_pmol_">6.02214179E11</Constant>
+        <Constant Name="_PI_">3.141592653589793</Constant>
+        <Constant Name="_R_">8314.46261815</Constant>
+        <Constant Name="_T_">300.0</Constant>
+        <Constant Name="burstSize1">20.0</Constant>
+        <Constant Name="Deg_GFPmRNA_init_uM">0.0</Constant>
+        <Constant Name="DegmRNA_init_uM">0.0</Constant>
+        <Constant Name="Degr_LuxImRNA_init_uM">0.0</Constant>
+        <Constant Name="degraded_ahl_init_uM">0.0</Constant>
+        <Constant Name="DegradedGFP_init_uM">0.0</Constant>
+        <Constant Name="DegradedLuxI_init_uM">0.0</Constant>
+        <Constant Name="DegradedLuxR_AHL_Dimer_init_uM">0.0</Constant>
+        <Constant Name="DegradedLuxR_AHL_init_uM">0.0</Constant>
+        <Constant Name="DegradedLuxR_init_uM">0.0</Constant>
+        <Constant Name="GFP_Inside_init_uM">0.0</Constant>
+        <Constant Name="GFP_mRNA_init_uM">0.0</Constant>
+        <Constant Name="K_millivolts_per_volt">1000.0</Constant>
+        <Constant Name="Kf__3OC6HSLdiffusion">1.0</Constant>
+        <Constant Name="Kf___AHL_LuxR_2_formation">0.8333</Constant>
+        <Constant Name="Kf_AHL_degradation">6.66666666667E-4</Constant>
+        <Constant Name="Kf_Bind_LuxR">1.666667</Constant>
+        <Constant Name="Kf_Bind_pLux">0.833333333333</Constant>
+        <Constant Name="Kf_Deg_LuxImRNA">0.00578333333333</Constant>
+        <Constant Name="Kf_Degr_GFPmRNA">0.0042</Constant>
+        <Constant Name="Kf_Degrade_GFP">0.001153</Constant>
+        <Constant Name="Kf_Degrade_LuxR_3OC">3.33333333333E-5</Constant>
+        <Constant Name="Kf_Degrade_LuxR_AHL_dimer">3.33333333333E-5</Constant>
+        <Constant Name="Kf_Degrade_LuxRmRNA">0.00578333333333</Constant>
+        <Constant Name="Kf_DegradeLuxI">1.66666666667E-4</Constant>
+        <Constant Name="Kf_DegradeLuxR">3.33333333333E-5</Constant>
+        <Constant Name="Kf_Make_GFP">0.067</Constant>
+        <Constant Name="Kf_PFAS_BindprmA">1.0</Constant>
+        <Constant Name="Kf_PFAS_DiffusionAndMessenger">0.1</Constant>
+        <Constant Name="Kf_pLux_leak">0.0</Constant>
+        <Constant Name="Kf_prmA_leak">0.0</Constant>
+        <Constant Name="KMOLE">0.001660538783162726</Constant>
+        <Constant Name="Kr__3OC6HSLdiffusion">0.0</Constant>
+        <Constant Name="Kr___AHL_LuxR_2_formation">0.01666666</Constant>
+        <Constant Name="Kr_AHL_degradation">0.0</Constant>
+        <Constant Name="Kr_Bind_LuxR">0.166667</Constant>
+        <Constant Name="Kr_Bind_pLux">0.166666666667</Constant>
+        <Constant Name="Kr_Deg_LuxImRNA">0.0</Constant>
+        <Constant Name="Kr_Degr_GFPmRNA">0.0</Constant>
+        <Constant Name="Kr_Degrade_GFP">0.0</Constant>
+        <Constant Name="Kr_Degrade_LuxR_3OC">0.0</Constant>
+        <Constant Name="Kr_Degrade_LuxR_AHL_dimer">0.0</Constant>
+        <Constant Name="Kr_Degrade_LuxRmRNA">0.0</Constant>
+        <Constant Name="Kr_DegradeLuxI">0.0</Constant>
+        <Constant Name="Kr_DegradeLuxR">0.0</Constant>
+        <Constant Name="Kr_Express_pLux_Operon">0.0</Constant>
+        <Constant Name="Kr_Make_3OC6HSL">0.0</Constant>
+        <Constant Name="Kr_Make_GFP">0.0</Constant>
+        <Constant Name="Kr_Make_LuxI">0.0</Constant>
+        <Constant Name="Kr_Make_LuxI_mRNA">0.0</Constant>
+        <Constant Name="Kr_Make_LuxR">0.0</Constant>
+        <Constant Name="Kr_Make_LuxRmRNA">0.0</Constant>
+        <Constant Name="Kr_PFAS_BindprmA">0.01</Constant>
+        <Constant Name="Kr_PFAS_DiffusionAndMessenger">0.1</Constant>
+        <Constant Name="Kr_pLux_leak">0.0</Constant>
+        <Constant Name="Kr_prmA_leak">0.0</Constant>
+        <Constant Name="LuxI_init_uM">0.0</Constant>
+        <Constant Name="LuxI_mRNA_init_uM">0.0</Constant>
+        <Constant Name="LuxR_3OC6HSL_dimer_init_uM">0.0</Constant>
+        <Constant Name="LuxR_3OC6HSL_init_uM">0.0</Constant>
+        <Constant Name="luxR_gene_init_uM">3.0E-8</Constant>
+        <Constant Name="LuxR_mRNA_init_uM">0.0</Constant>
+        <Constant Name="LuxR_pLux_Cplx_init_uM">0.0</Constant>
+        <Constant Name="LuxRinCell_init_uM">0.00332</Constant>
+        <Constant Name="PFAS_Inside_init_uM">0.0</Constant>
+        <Constant Name="PFAS_outside_init_uM">0.0033</Constant>
+        <Constant Name="PFOA_prmA_Cplx_init_uM">0.0</Constant>
+        <Constant Name="pLux_operon_init_uM">3.0E-8</Constant>
+        <Constant Name="prmA_Operon_init_uM">3.0E-8</Constant>
+        <Constant Name="Size_Cell">50000.0</Constant>
+        <Constant Name="Size_Environment">50000.0</Constant>
+        <VolumeVariable Name="_3OC6HSL_inside" Domain="Compartment" />
+        <VolumeVariable Name="_3OC6HSL_out" Domain="Compartment" />
+        <VolumeVariable Name="Deg_GFPmRNA" Domain="Compartment" />
+        <VolumeVariable Name="DegmRNA" Domain="Compartment" />
+        <VolumeVariable Name="Degr_LuxImRNA" Domain="Compartment" />
+        <VolumeVariable Name="degraded_ahl" Domain="Compartment" />
+        <VolumeVariable Name="DegradedGFP" Domain="Compartment" />
+        <VolumeVariable Name="DegradedLuxI" Domain="Compartment" />
+        <VolumeVariable Name="DegradedLuxR" Domain="Compartment" />
+        <VolumeVariable Name="DegradedLuxR_AHL" Domain="Compartment" />
+        <VolumeVariable Name="DegradedLuxR_AHL_Dimer" Domain="Compartment" />
+        <VolumeVariable Name="GFP_Inside" Domain="Compartment" />
+        <VolumeVariable Name="GFP_mRNA" Domain="Compartment" />
+        <VolumeVariable Name="LuxI" Domain="Compartment" />
+        <VolumeVariable Name="LuxI_mRNA" Domain="Compartment" />
+        <VolumeVariable Name="LuxR_3OC6HSL" Domain="Compartment" />
+        <VolumeVariable Name="LuxR_3OC6HSL_dimer" Domain="Compartment" />
+        <VolumeVariable Name="luxR_gene" Domain="Compartment" />
+        <VolumeVariable Name="LuxR_mRNA" Domain="Compartment" />
+        <VolumeVariable Name="LuxR_pLux_Cplx" Domain="Compartment" />
+        <VolumeVariable Name="LuxRinCell" Domain="Compartment" />
+        <VolumeVariable Name="PFAS_Inside" Domain="Compartment" />
+        <VolumeVariable Name="PFAS_outside" Domain="Compartment" />
+        <VolumeVariable Name="PFOA_prmA_Cplx" Domain="Compartment" />
+        <VolumeVariable Name="prmA_Operon" Domain="Compartment" />
+        <Function Name="J__3OC6HSLdiffusion" Domain="Compartment">((Kf__3OC6HSLdiffusion * _3OC6HSL_out) - (Kr__3OC6HSLdiffusion * _3OC6HSL_inside))</Function>
+        <Function Name="J___AHL_LuxR_2_formation" Domain="Compartment">((Kf___AHL_LuxR_2_formation * pow(LuxR_3OC6HSL,2.0)) - (Kr___AHL_LuxR_2_formation * LuxR_3OC6HSL_dimer))</Function>
+        <Function Name="J_AHL_degradation" Domain="Compartment">((Kf_AHL_degradation * _3OC6HSL_inside) - (Kr_AHL_degradation * degraded_ahl))</Function>
+        <Function Name="J_Bind_LuxR" Domain="Compartment">(((Kf_Bind_LuxR * _3OC6HSL_inside) * LuxRinCell) - (Kr_Bind_LuxR * LuxR_3OC6HSL))</Function>
+        <Function Name="J_Bind_pLux" Domain="Compartment">(((Kf_Bind_pLux * LuxR_3OC6HSL_dimer) * pLux_operon) - (Kr_Bind_pLux * LuxR_pLux_Cplx))</Function>
+        <Function Name="J_Deg_LuxImRNA" Domain="Compartment">((Kf_Deg_LuxImRNA * LuxI_mRNA) - (Kr_Deg_LuxImRNA * Degr_LuxImRNA))</Function>
+        <Function Name="J_Degr_GFPmRNA" Domain="Compartment">((Kf_Degr_GFPmRNA * GFP_mRNA) - (Kr_Degr_GFPmRNA * Deg_GFPmRNA))</Function>
+        <Function Name="J_Degrade_GFP" Domain="Compartment">((Kf_Degrade_GFP * GFP_Inside) - (Kr_Degrade_GFP * DegradedGFP))</Function>
+        <Function Name="J_Degrade_LuxR_3OC" Domain="Compartment">((Kf_Degrade_LuxR_3OC * LuxR_3OC6HSL) - (Kr_Degrade_LuxR_3OC * DegradedLuxR_AHL))</Function>
+        <Function Name="J_Degrade_LuxR_AHL_dimer" Domain="Compartment">((Kf_Degrade_LuxR_AHL_dimer * LuxR_3OC6HSL_dimer) - (Kr_Degrade_LuxR_AHL_dimer * DegradedLuxR_AHL_Dimer))</Function>
+        <Function Name="J_Degrade_LuxRmRNA" Domain="Compartment">((Kf_Degrade_LuxRmRNA * LuxR_mRNA) - (Kr_Degrade_LuxRmRNA * DegmRNA))</Function>
+        <Function Name="J_DegradeLuxI" Domain="Compartment">((Kf_DegradeLuxI * LuxI) - (Kr_DegradeLuxI * DegradedLuxI))</Function>
+        <Function Name="J_DegradeLuxR" Domain="Compartment">((Kf_DegradeLuxR * LuxRinCell) - (Kr_DegradeLuxR * DegradedLuxR))</Function>
+        <Function Name="J_Express_pLux_Operon" Domain="Compartment">((Kf_Express_pLux_Operon * LuxR_pLux_Cplx) - ((Kr_Express_pLux_Operon * GFP_mRNA) * LuxR_pLux_Cplx))</Function>
+        <Function Name="J_Make_3OC6HSL" Domain="Compartment">((Kf_Make_3OC6HSL * LuxI) - ((Kr_Make_3OC6HSL * _3OC6HSL_inside) * LuxI))</Function>
+        <Function Name="J_Make_GFP" Domain="Compartment">((Kf_Make_GFP * GFP_mRNA) - ((Kr_Make_GFP * GFP_Inside) * GFP_mRNA))</Function>
+        <Function Name="J_Make_LuxI" Domain="Compartment">((Kf_Make_LuxI * LuxI_mRNA) - ((Kr_Make_LuxI * LuxI) * LuxI_mRNA))</Function>
+        <Function Name="J_Make_LuxI_mRNA" Domain="Compartment">((Kf_Make_LuxI_mRNA * PFOA_prmA_Cplx) - ((Kr_Make_LuxI_mRNA * LuxI_mRNA) * PFOA_prmA_Cplx))</Function>
+        <Function Name="J_Make_LuxR" Domain="Compartment">((Kf_Make_LuxR * LuxR_mRNA) - ((Kr_Make_LuxR * LuxR_mRNA) * LuxRinCell))</Function>
+        <Function Name="J_Make_LuxRmRNA" Domain="Compartment">((Kf_Make_LuxRmRNA * luxR_gene) - ((Kr_Make_LuxRmRNA * LuxR_mRNA) * luxR_gene))</Function>
+        <Function Name="J_PFAS_BindprmA" Domain="Compartment">(((Kf_PFAS_BindprmA * PFAS_Inside) * prmA_Operon) - (Kr_PFAS_BindprmA * PFOA_prmA_Cplx))</Function>
+        <Function Name="J_PFAS_DiffusionAndMessenger" Domain="Compartment">((Kf_PFAS_DiffusionAndMessenger * PFAS_outside) - (Kr_PFAS_DiffusionAndMessenger * PFAS_Inside))</Function>
+        <Function Name="J_pLux_leak" Domain="Compartment">((Kf_pLux_leak * pLux_operon) - ((Kr_pLux_leak * GFP_mRNA) * pLux_operon))</Function>
+        <Function Name="J_prmA_leak" Domain="Compartment">((Kf_prmA_leak * prmA_Operon) - ((Kr_prmA_leak * LuxI_mRNA) * prmA_Operon))</Function>
+        <Function Name="Kf_Express_pLux_Operon" Domain="Compartment">(50.0 / burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_3OC6HSL" Domain="Compartment">(0.04 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxI" Domain="Compartment">(0.00578333333333 * burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxI_mRNA" Domain="Compartment">(50.0 / burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxR" Domain="Compartment">(0.00578333333333 * burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxRmRNA" Domain="Compartment">(200.0 / burstSize1 / 60.0)</Function>
+        <Function Name="KFlux_Environment_Cell" Domain="Compartment">(Size_Environment / Size_Cell)</Function>
+        <Function Name="pLux_operon" Domain="Compartment">pLux_operon_init_uM</Function>
+        <CompartmentSubDomain Name="Compartment">
+          <BoundaryType Boundary="Xm" Type="Value" />
+          <BoundaryType Boundary="Xp" Type="Value" />
+          <BoundaryType Boundary="Ym" Type="Value" />
+          <BoundaryType Boundary="Yp" Type="Value" />
+          <BoundaryType Boundary="Zm" Type="Value" />
+          <BoundaryType Boundary="Zp" Type="Value" />
+          <OdeEquation Name="LuxRinCell" SolutionType="Unknown">
+            <Rate>(J_Make_LuxR - J_Bind_LuxR - J_DegradeLuxR)</Rate>
+            <Initial>LuxRinCell_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="luxR_gene" SolutionType="Unknown">
+            <Rate>0.0</Rate>
+            <Initial>luxR_gene_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="_3OC6HSL_inside" SolutionType="Unknown">
+            <Rate>((KFlux_Environment_Cell * J__3OC6HSLdiffusion) - J_Bind_LuxR + J_Make_3OC6HSL - J_AHL_degradation)</Rate>
+            <Initial>_3OC6HSL_inside_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="GFP_Inside" SolutionType="Unknown">
+            <Rate>( - J_Degrade_GFP + J_Make_GFP)</Rate>
+            <Initial>GFP_Inside_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="PFAS_Inside" SolutionType="Unknown">
+            <Rate>((KFlux_Environment_Cell * J_PFAS_DiffusionAndMessenger) - J_PFAS_BindprmA)</Rate>
+            <Initial>PFAS_Inside_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="prmA_Operon" SolutionType="Unknown">
+            <Rate>- J_PFAS_BindprmA</Rate>
+            <Initial>prmA_Operon_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="LuxI" SolutionType="Unknown">
+            <Rate>(J_Make_LuxI - J_DegradeLuxI)</Rate>
+            <Initial>LuxI_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="DegradedGFP" SolutionType="Unknown">
+            <Rate>J_Degrade_GFP</Rate>
+            <Initial>DegradedGFP_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="DegradedLuxI" SolutionType="Unknown">
+            <Rate>J_DegradeLuxI</Rate>
+            <Initial>DegradedLuxI_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="DegradedLuxR" SolutionType="Unknown">
+            <Rate>J_DegradeLuxR</Rate>
+            <Initial>DegradedLuxR_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="LuxR_pLux_Cplx" SolutionType="Unknown">
+            <Rate>J_Bind_pLux</Rate>
+            <Initial>LuxR_pLux_Cplx_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="PFOA_prmA_Cplx" SolutionType="Unknown">
+            <Rate>J_PFAS_BindprmA</Rate>
+            <Initial>PFOA_prmA_Cplx_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="LuxI_mRNA" SolutionType="Unknown">
+            <Rate>(J_Make_LuxI_mRNA - J_Deg_LuxImRNA + J_prmA_leak)</Rate>
+            <Initial>LuxI_mRNA_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="GFP_mRNA" SolutionType="Unknown">
+            <Rate>(J_Express_pLux_Operon - J_Degr_GFPmRNA + J_pLux_leak)</Rate>
+            <Initial>GFP_mRNA_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="LuxR_mRNA" SolutionType="Unknown">
+            <Rate>(J_Make_LuxRmRNA - J_Degrade_LuxRmRNA)</Rate>
+            <Initial>LuxR_mRNA_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="DegmRNA" SolutionType="Unknown">
+            <Rate>J_Degrade_LuxRmRNA</Rate>
+            <Initial>DegmRNA_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="Degr_LuxImRNA" SolutionType="Unknown">
+            <Rate>J_Deg_LuxImRNA</Rate>
+            <Initial>Degr_LuxImRNA_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="Deg_GFPmRNA" SolutionType="Unknown">
+            <Rate>J_Degr_GFPmRNA</Rate>
+            <Initial>Deg_GFPmRNA_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="LuxR_3OC6HSL" SolutionType="Unknown">
+            <Rate>(J_Bind_LuxR - J_Degrade_LuxR_3OC - (2.0 * J___AHL_LuxR_2_formation))</Rate>
+            <Initial>LuxR_3OC6HSL_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="DegradedLuxR_AHL" SolutionType="Unknown">
+            <Rate>J_Degrade_LuxR_3OC</Rate>
+            <Initial>DegradedLuxR_AHL_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="LuxR_3OC6HSL_dimer" SolutionType="Unknown">
+            <Rate>(J___AHL_LuxR_2_formation - J_Bind_pLux - J_Degrade_LuxR_AHL_dimer)</Rate>
+            <Initial>LuxR_3OC6HSL_dimer_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="degraded_ahl" SolutionType="Unknown">
+            <Rate>J_AHL_degradation</Rate>
+            <Initial>degraded_ahl_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="DegradedLuxR_AHL_Dimer" SolutionType="Unknown">
+            <Rate>J_Degrade_LuxR_AHL_dimer</Rate>
+            <Initial>DegradedLuxR_AHL_Dimer_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="PFAS_outside" SolutionType="Unknown">
+            <Rate>- J_PFAS_DiffusionAndMessenger</Rate>
+            <Initial>PFAS_outside_init_uM</Initial>
+          </OdeEquation>
+          <OdeEquation Name="_3OC6HSL_out" SolutionType="Unknown">
+            <Rate>- J__3OC6HSLdiffusion</Rate>
+            <Initial>_3OC6HSL_out_init_uM</Initial>
+          </OdeEquation>
+        </CompartmentSubDomain>
+        <Version Name="Application0_generated" KeyValue="261667585" BranchId="259530227" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Application0_generated' owned by user seriously</Annotation>
+        </Version>
+      </MathDescription>
+      <Simulation Name="Simulation0">
+        <Annotation>cloned from 'Simulation0' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="1200.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="Simulation0" KeyValue="261667695" BranchId="259530454" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Simulation0' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="NoPFAS">
+        <Annotation>cloned from 'NoPFAS' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="1200.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM">0.0</Constant>
+        </MathOverrides>
+        <Version Name="NoPFAS" KeyValue="261667697" BranchId="259530457" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'NoPFAS' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="NoPFAS_No3OC6SH">
+        <Annotation>cloned from 'NoPFAS_No3OC6SH' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="30000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM">0.0</Constant>
+        </MathOverrides>
+        <Version Name="NoPFAS_No3OC6SH" KeyValue="261667699" BranchId="259530460" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'NoPFAS_No3OC6SH' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS_No3OC6SH">
+        <Annotation>cloned from 'PFAS_No3OC6SH' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="600.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="PFAS_No3OC6SH" KeyValue="261667701" BranchId="259530463" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'PFAS_No3OC6SH' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="Copy of PFAS_No3OC6SH">
+        <Annotation>cloned from 'Copy of PFAS_No3OC6SH' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="30.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="Copy of PFAS_No3OC6SH" KeyValue="261667703" BranchId="259530466" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Copy of PFAS_No3OC6SH' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="Copy of PFAS_No3OC6SH 1">
+        <Annotation>cloned from 'Copy of PFAS_No3OC6SH 1' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="3600.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="Copy of PFAS_No3OC6SH 1" KeyValue="261667705" BranchId="259530469" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Copy of PFAS_No3OC6SH 1' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS Scan 3e-6 LuxR init">
+        <Annotation>cloned from 'PFAS Scan 3e-6 LuxR init' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="30000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM" ConstantArraySpec="1000">"3.3E-4", "0.0033", "0.033", "0.33", "3.3", "33.0", "330.0"</Constant>
+          <Constant Name="LuxRinCell_init_uM">3.0E-6</Constant>
+        </MathOverrides>
+        <Version Name="PFAS Scan 3e-6 LuxR init" KeyValue="261667707" BranchId="259530472" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'PFAS Scan 3e-6 LuxR init' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS Scan 3e-3 LuxR init">
+        <Annotation>cloned from 'PFAS Scan 3e-3 LuxR init' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="300000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM" ConstantArraySpec="1000">"3.3E-4", "0.0033", "0.033", "0.33", "3.3", "33.0", "330.0"</Constant>
+        </MathOverrides>
+        <Version Name="PFAS Scan 3e-3 LuxR init" KeyValue="261667709" BranchId="259530475" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'PFAS Scan 3e-3 LuxR init' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="Simulation2">
+        <Annotation>scanning outside pfas from 10^-1 =&gt; 10^3 (log)</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="20000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions OutputTimeStep="1.0" />
+          <Constant Name="Kf_PFAS_BindprmA">100.0</Constant>
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM" ConstantArraySpec="1000">"0.0", "1.0", "10.0", "100.0", "1000.0"</Constant>
+          <Constant Name="LuxRinCell_init_uM">0.332</Constant>
+        </MathOverrides>
+        <Version Name="Simulation2" KeyValue="261667711" BranchId="260300798" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>scanning outside pfas from 10^-1 =&gt; 10^3 (log)</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="testing_rates">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="100000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <Constant Name="Kf_Bind_LuxR">0.005</Constant>
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="Kf_Degrade_LuxR_AHL_dimer">0.0</Constant>
+          <Constant Name="Kr_Bind_LuxR">0.0</Constant>
+          <Constant Name="PFAS_Inside_init_uM" ConstantArraySpec="1000">"0.0", "100.0"</Constant>
+          <Constant Name="Kf_Bind_LuxR">1.6666666666666665</Constant>
+          <Constant Name="Kf___AHL_LuxR_2_formation">0.8333333333333334</Constant>
+          <Constant Name="PFAS_outside_init_uM">0.0</Constant>
+        </MathOverrides>
+        <Version Name="testing_rates" KeyValue="261667713" BranchId="261285502" Archived="0" Date="11-Oct-2023 21:38:44" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="Simulation5">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="259200.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM" ConstantArraySpec="1000">"0.0", "1.0", "10.0", "100.0", "1000.0", "10000.0"</Constant>
+          <Constant Name="LuxRinCell_init_uM">0.0</Constant>
+        </MathOverrides>
+        <Version Name="Simulation5" KeyValue="261667861" BranchId="261534617" Archived="0" Date="11-Oct-2023 21:40:13" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="Copy of Simulation5 clamped LuxR">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Combined Stiff Solver (IDA/CVODE)">
+          <TimeBound StartTime="0.0" EndTime="259200.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-9" />
+          <OutputOptions KeepEvery="1" KeepAtMost="1000" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_init_uM" ConstantArraySpec="1000">"0.0", "1.0", "10.0", "100.0", "1000.0"</Constant>
+        </MathOverrides>
+        <Version Name="Copy of Simulation5 clamped LuxR" KeyValue="261667717" BranchId="261664731" Archived="0" Date="11-Oct-2023 21:38:45" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Version Name="Application0" KeyValue="266648653" BranchId="259530358" Archived="0" Date="19-Jan-2024 18:00:31" FromVersionable="false">
+        <Owner Name="dglVcell" Identifier="202231687" />
+        <GroupAccess Type="1" />
+        <Annotation>cloned from 'Application0' owned by user seriously</Annotation>
+      </Version>
+      <MicroscopeMeasurement Name="fluor">
+        <ConvolutionKernel Type="ProjectionZKernel" />
+      </MicroscopeMeasurement>
+    </SimulationSpec>
+    <SimulationSpec Name="Stochastic" Stochastic="true" UseConcentration="false" RandomizeInitCondition="false" SpringSaLaD="false" RuleBased="false" MassConservationModelReduction="false" InsufficientIterations="false" InsufficientMaxMolecules="false">
+      <NetworkConstraints RbmMaxIteration="1" RbmMaxMoleculesPerSpecies="10" RbmSpeciesLimit="800" RbmReactionsLimit="2500">
+        <MaxStoichiometry MolecularType="prmA_Operon" Integer="100" />
+        <MaxStoichiometry MolecularType="Messenger" Integer="100" />
+        <MaxStoichiometry MolecularType="PFOA" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxI" Integer="100" />
+        <MaxStoichiometry MolecularType="_3OC6HSL" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxR" Integer="100" />
+        <MaxStoichiometry MolecularType="luxR_gene" Integer="100" />
+        <MaxStoichiometry MolecularType="GFP" Integer="100" />
+        <MaxStoichiometry MolecularType="Precursors_to_3OC6HSL" Integer="100" />
+        <MaxStoichiometry MolecularType="pLUX_Operon" Integer="100" />
+        <MaxStoichiometry MolecularType="Degraded" Integer="100" />
+        <MaxStoichiometry MolecularType="GFP_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxI_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="LuxR_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="Degraded_mRNA" Integer="100" />
+        <MaxStoichiometry MolecularType="AHL_LuxR_Dimer" Integer="100" />
+        <MaxStoichiometry MolecularType="pLux_operon" Integer="100" />
+      </NetworkConstraints>
+      <Annotation>cloned from 'Stochastic' owned by user seriously
+(copied from Application0)</Annotation>
+      <Geometry Name="non-spatial1250860350" Dimension="0">
+        <Annotation>cloned from 'non-spatial1250860350' owned by user seriously</Annotation>
+        <Extent X="10.0" Y="10.0" Z="10.0" />
+        <Origin X="0.0" Y="0.0" Z="0.0" />
+        <SubVolume Name="Compartment" Handle="0" Type="Compartmental" KeyValue="259530225" />
+        <Version Name="non-spatial1250860350" KeyValue="259530221" BranchId="259530222" Archived="0" Date="15-Aug-2023 02:42:47" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'non-spatial1250860350' owned by user seriously</Annotation>
+        </Version>
+      </Geometry>
+      <GeometryContext>
+        <FeatureMapping Feature="Environment" GeometryClass="Compartment" SubVolume="Compartment" Size="50000.0">
+          <BoundariesTypes Xm="Flux" Xp="Flux" Ym="Flux" Yp="Flux" Zm="Flux" Zp="Flux" />
+        </FeatureMapping>
+        <FeatureMapping Feature="Cell" GeometryClass="Compartment" SubVolume="Compartment" Size="50000.0">
+          <BoundariesTypes Xm="Flux" Xp="Flux" Ym="Flux" Yp="Flux" Zm="Flux" Zp="Flux" />
+        </FeatureMapping>
+      </GeometryContext>
+      <ReactionContext>
+        <LocalizedCompoundSpec LocalizedCompoundRef="PFAS_outside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="_3OC6HSL_out" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxRinCell" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>1000.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="luxR_gene" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>1000.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="_3OC6HSL_inside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="GFP_Inside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="pLux_operon" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>1000.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="PFAS_Inside" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="prmA_Operon" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>1000.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxI" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedGFP" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxI" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxR" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_pLux_Cplx" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="PFOA_prmA_Cplx" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxI_mRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="GFP_mRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_mRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegmRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="Degr_LuxImRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="Deg_GFPmRNA" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_3OC6HSL" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxR_AHL" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="LuxR_3OC6HSL_dimer" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="degraded_ahl" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <LocalizedCompoundSpec LocalizedCompoundRef="DegradedLuxR_AHL_Dimer" ForceConstant="false" WellMixed="false" ForceContinuous="false">
+          <InitialCount>0.0</InitialCount>
+          <Diffusion>0.0</Diffusion>
+        </LocalizedCompoundSpec>
+        <ReactionSpec ReactionStepRef="Make_LuxR" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="_3OC6HSLdiffusion" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Bind_LuxR" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Express_pLux_Operon" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="PFAS_DiffusionAndMessenger" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_LuxI" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_3OC6HSL" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_GFP" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="DegradeLuxI" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="DegradeLuxR" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="PFAS_BindprmA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_LuxI_mRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_GFP" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Make_LuxRmRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_LuxRmRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Deg_LuxImRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degr_GFPmRNA" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_LuxR_3OC" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="(AHL.LuxR)2 formation" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Bind_pLux" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="prmA_leak" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="AHL_degradation" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="pLux_leak" ReactionMapping="included" />
+        <ReactionSpec ReactionStepRef="Degrade_LuxR_AHL_dimer" ReactionMapping="included" />
+      </ReactionContext>
+      <MathDescription Name="Copy of Application0_generated">
+        <Annotation>cloned from 'Copy of Application0_generated' owned by user seriously</Annotation>
+        <Constant Name="_3OC6HSL_inside_Count_initCount">0.0</Constant>
+        <Constant Name="_3OC6HSL_out_Count_initCount">0.0</Constant>
+        <Constant Name="_F_">96485.3321</Constant>
+        <Constant Name="_F_nmol_">9.64853321E-5</Constant>
+        <Constant Name="_N_pmol_">6.02214179E11</Constant>
+        <Constant Name="_PI_">3.141592653589793</Constant>
+        <Constant Name="_R_">8314.46261815</Constant>
+        <Constant Name="_T_">300.0</Constant>
+        <Constant Name="burstSize1">20.0</Constant>
+        <Constant Name="Deg_GFPmRNA_Count_initCount">0.0</Constant>
+        <Constant Name="DegmRNA_Count_initCount">0.0</Constant>
+        <Constant Name="Degr_LuxImRNA_Count_initCount">0.0</Constant>
+        <Constant Name="degraded_ahl_Count_initCount">0.0</Constant>
+        <Constant Name="DegradedGFP_Count_initCount">0.0</Constant>
+        <Constant Name="DegradedLuxI_Count_initCount">0.0</Constant>
+        <Constant Name="DegradedLuxR_AHL_Count_initCount">0.0</Constant>
+        <Constant Name="DegradedLuxR_AHL_Dimer_Count_initCount">0.0</Constant>
+        <Constant Name="DegradedLuxR_Count_initCount">0.0</Constant>
+        <Constant Name="GFP_Inside_Count_initCount">0.0</Constant>
+        <Constant Name="GFP_mRNA_Count_initCount">0.0</Constant>
+        <Constant Name="Kf__3OC6HSLdiffusion">1.0</Constant>
+        <Constant Name="Kf___AHL_LuxR_2_formation">0.8333</Constant>
+        <Constant Name="Kf_AHL_degradation">6.66666666667E-4</Constant>
+        <Constant Name="Kf_Bind_LuxR">1.666667</Constant>
+        <Constant Name="Kf_Bind_pLux">0.833333333333</Constant>
+        <Constant Name="Kf_Deg_LuxImRNA">0.00578333333333</Constant>
+        <Constant Name="Kf_Degr_GFPmRNA">0.0042</Constant>
+        <Constant Name="Kf_Degrade_GFP">0.001153</Constant>
+        <Constant Name="Kf_Degrade_LuxR_3OC">3.33333333333E-5</Constant>
+        <Constant Name="Kf_Degrade_LuxR_AHL_dimer">3.33333333333E-5</Constant>
+        <Constant Name="Kf_Degrade_LuxRmRNA">0.00578333333333</Constant>
+        <Constant Name="Kf_DegradeLuxI">1.66666666667E-4</Constant>
+        <Constant Name="Kf_DegradeLuxR">3.33333333333E-5</Constant>
+        <Constant Name="Kf_Make_GFP">0.067</Constant>
+        <Constant Name="Kf_PFAS_BindprmA">1.0</Constant>
+        <Constant Name="Kf_PFAS_DiffusionAndMessenger">0.1</Constant>
+        <Constant Name="Kf_pLux_leak">0.0</Constant>
+        <Constant Name="Kf_prmA_leak">0.0</Constant>
+        <Constant Name="KMOLE">0.001660538783162726</Constant>
+        <Constant Name="Kr__3OC6HSLdiffusion">0.0</Constant>
+        <Constant Name="Kr___AHL_LuxR_2_formation">0.01666666</Constant>
+        <Constant Name="Kr_AHL_degradation">0.0</Constant>
+        <Constant Name="Kr_Bind_LuxR">0.166667</Constant>
+        <Constant Name="Kr_Bind_pLux">0.166666666667</Constant>
+        <Constant Name="Kr_Deg_LuxImRNA">0.0</Constant>
+        <Constant Name="Kr_Degr_GFPmRNA">0.0</Constant>
+        <Constant Name="Kr_Degrade_GFP">0.0</Constant>
+        <Constant Name="Kr_Degrade_LuxR_3OC">0.0</Constant>
+        <Constant Name="Kr_Degrade_LuxR_AHL_dimer">0.0</Constant>
+        <Constant Name="Kr_Degrade_LuxRmRNA">0.0</Constant>
+        <Constant Name="Kr_DegradeLuxI">0.0</Constant>
+        <Constant Name="Kr_DegradeLuxR">0.0</Constant>
+        <Constant Name="Kr_Express_pLux_Operon">0.0</Constant>
+        <Constant Name="Kr_Make_3OC6HSL">0.0</Constant>
+        <Constant Name="Kr_Make_GFP">0.0</Constant>
+        <Constant Name="Kr_Make_LuxI">0.0</Constant>
+        <Constant Name="Kr_Make_LuxI_mRNA">0.0</Constant>
+        <Constant Name="Kr_Make_LuxR">0.0</Constant>
+        <Constant Name="Kr_Make_LuxRmRNA">0.0</Constant>
+        <Constant Name="Kr_PFAS_BindprmA">0.01</Constant>
+        <Constant Name="Kr_PFAS_DiffusionAndMessenger">0.1</Constant>
+        <Constant Name="Kr_pLux_leak">0.0</Constant>
+        <Constant Name="Kr_prmA_leak">0.0</Constant>
+        <Constant Name="LuxI_Count_initCount">0.0</Constant>
+        <Constant Name="LuxI_mRNA_Count_initCount">0.0</Constant>
+        <Constant Name="LuxR_3OC6HSL_Count_initCount">0.0</Constant>
+        <Constant Name="LuxR_3OC6HSL_dimer_Count_initCount">0.0</Constant>
+        <Constant Name="luxR_gene_Count_initCount">1000.0</Constant>
+        <Constant Name="LuxR_mRNA_Count_initCount">0.0</Constant>
+        <Constant Name="LuxR_pLux_Cplx_Count_initCount">0.0</Constant>
+        <Constant Name="LuxRinCell_Count_initCount">1000.0</Constant>
+        <Constant Name="PFAS_Inside_Count_initCount">0.0</Constant>
+        <Constant Name="PFAS_outside_Count_initCount">0.0</Constant>
+        <Constant Name="PFOA_prmA_Cplx_Count_initCount">0.0</Constant>
+        <Constant Name="pLux_operon_Count_initCount">1000.0</Constant>
+        <Constant Name="prmA_Operon_Count_initCount">1000.0</Constant>
+        <Constant Name="Size_Cell">50000.0</Constant>
+        <Constant Name="Size_Environment">50000.0</Constant>
+        <Constant Name="UnitFactor_molecules_uM_neg_1_um_neg_3">(1.0 * pow(KMOLE, - 1.0))</Constant>
+        <Constant Name="UnitFactor_uM_um3_molecules_neg_1">(1.0 * pow(KMOLE,1.0))</Constant>
+        <StochasticVolumeVariable Name="_3OC6HSL_inside_Count" />
+        <StochasticVolumeVariable Name="_3OC6HSL_out_Count" />
+        <StochasticVolumeVariable Name="Deg_GFPmRNA_Count" />
+        <StochasticVolumeVariable Name="DegmRNA_Count" />
+        <StochasticVolumeVariable Name="Degr_LuxImRNA_Count" />
+        <StochasticVolumeVariable Name="degraded_ahl_Count" />
+        <StochasticVolumeVariable Name="DegradedGFP_Count" />
+        <StochasticVolumeVariable Name="DegradedLuxI_Count" />
+        <StochasticVolumeVariable Name="DegradedLuxR_AHL_Count" />
+        <StochasticVolumeVariable Name="DegradedLuxR_AHL_Dimer_Count" />
+        <StochasticVolumeVariable Name="DegradedLuxR_Count" />
+        <StochasticVolumeVariable Name="GFP_Inside_Count" />
+        <StochasticVolumeVariable Name="GFP_mRNA_Count" />
+        <StochasticVolumeVariable Name="LuxI_Count" />
+        <StochasticVolumeVariable Name="LuxI_mRNA_Count" />
+        <StochasticVolumeVariable Name="LuxR_3OC6HSL_Count" />
+        <StochasticVolumeVariable Name="LuxR_3OC6HSL_dimer_Count" />
+        <StochasticVolumeVariable Name="luxR_gene_Count" />
+        <StochasticVolumeVariable Name="LuxR_mRNA_Count" />
+        <StochasticVolumeVariable Name="LuxR_pLux_Cplx_Count" />
+        <StochasticVolumeVariable Name="LuxRinCell_Count" />
+        <StochasticVolumeVariable Name="PFAS_Inside_Count" />
+        <StochasticVolumeVariable Name="PFAS_outside_Count" />
+        <StochasticVolumeVariable Name="PFOA_prmA_Cplx_Count" />
+        <StochasticVolumeVariable Name="pLux_operon_Count" />
+        <StochasticVolumeVariable Name="prmA_Operon_Count" />
+        <Function Name="_3OC6HSL_inside" Domain="Compartment">((UnitFactor_uM_um3_molecules_neg_1 * _3OC6HSL_inside_Count) / Size_Cell)</Function>
+        <Function Name="_3OC6HSL_out" Domain="Compartment">((UnitFactor_uM_um3_molecules_neg_1 * _3OC6HSL_out_Count) / Size_Environment)</Function>
+        <Function Name="Deg_GFPmRNA" Domain="Compartment">((Deg_GFPmRNA_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="DegmRNA" Domain="Compartment">((DegmRNA_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="Degr_LuxImRNA" Domain="Compartment">((Degr_LuxImRNA_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="degraded_ahl" Domain="Compartment">((UnitFactor_uM_um3_molecules_neg_1 * degraded_ahl_Count) / Size_Cell)</Function>
+        <Function Name="DegradedGFP" Domain="Compartment">((DegradedGFP_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="DegradedLuxI" Domain="Compartment">((DegradedLuxI_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="DegradedLuxR" Domain="Compartment">((DegradedLuxR_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="DegradedLuxR_AHL" Domain="Compartment">((DegradedLuxR_AHL_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="DegradedLuxR_AHL_Dimer" Domain="Compartment">((DegradedLuxR_AHL_Dimer_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="GFP_Inside" Domain="Compartment">((GFP_Inside_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="GFP_mRNA" Domain="Compartment">((GFP_mRNA_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="J__3OC6HSLdiffusion" Domain="Compartment">((Kf__3OC6HSLdiffusion * _3OC6HSL_out) - (Kr__3OC6HSLdiffusion * _3OC6HSL_inside))</Function>
+        <Function Name="J___AHL_LuxR_2_formation" Domain="Compartment">((Kf___AHL_LuxR_2_formation * pow(LuxR_3OC6HSL,2.0)) - (Kr___AHL_LuxR_2_formation * LuxR_3OC6HSL_dimer))</Function>
+        <Function Name="J_AHL_degradation" Domain="Compartment">((Kf_AHL_degradation * _3OC6HSL_inside) - (Kr_AHL_degradation * degraded_ahl))</Function>
+        <Function Name="J_Bind_LuxR" Domain="Compartment">(((Kf_Bind_LuxR * _3OC6HSL_inside) * LuxRinCell) - (Kr_Bind_LuxR * LuxR_3OC6HSL))</Function>
+        <Function Name="J_Bind_pLux" Domain="Compartment">(((Kf_Bind_pLux * LuxR_3OC6HSL_dimer) * pLux_operon) - (Kr_Bind_pLux * LuxR_pLux_Cplx))</Function>
+        <Function Name="J_Deg_LuxImRNA" Domain="Compartment">((Kf_Deg_LuxImRNA * LuxI_mRNA) - (Kr_Deg_LuxImRNA * Degr_LuxImRNA))</Function>
+        <Function Name="J_Degr_GFPmRNA" Domain="Compartment">((Kf_Degr_GFPmRNA * GFP_mRNA) - (Kr_Degr_GFPmRNA * Deg_GFPmRNA))</Function>
+        <Function Name="J_Degrade_GFP" Domain="Compartment">((Kf_Degrade_GFP * GFP_Inside) - (Kr_Degrade_GFP * DegradedGFP))</Function>
+        <Function Name="J_Degrade_LuxR_3OC" Domain="Compartment">((Kf_Degrade_LuxR_3OC * LuxR_3OC6HSL) - (Kr_Degrade_LuxR_3OC * DegradedLuxR_AHL))</Function>
+        <Function Name="J_Degrade_LuxR_AHL_dimer" Domain="Compartment">((Kf_Degrade_LuxR_AHL_dimer * LuxR_3OC6HSL_dimer) - (Kr_Degrade_LuxR_AHL_dimer * DegradedLuxR_AHL_Dimer))</Function>
+        <Function Name="J_Degrade_LuxRmRNA" Domain="Compartment">((Kf_Degrade_LuxRmRNA * LuxR_mRNA) - (Kr_Degrade_LuxRmRNA * DegmRNA))</Function>
+        <Function Name="J_DegradeLuxI" Domain="Compartment">((Kf_DegradeLuxI * LuxI) - (Kr_DegradeLuxI * DegradedLuxI))</Function>
+        <Function Name="J_DegradeLuxR" Domain="Compartment">((Kf_DegradeLuxR * LuxRinCell) - (Kr_DegradeLuxR * DegradedLuxR))</Function>
+        <Function Name="J_Express_pLux_Operon" Domain="Compartment">((Kf_Express_pLux_Operon * LuxR_pLux_Cplx) - ((Kr_Express_pLux_Operon * GFP_mRNA) * LuxR_pLux_Cplx))</Function>
+        <Function Name="J_Make_3OC6HSL" Domain="Compartment">((Kf_Make_3OC6HSL * LuxI) - ((Kr_Make_3OC6HSL * _3OC6HSL_inside) * LuxI))</Function>
+        <Function Name="J_Make_GFP" Domain="Compartment">((Kf_Make_GFP * GFP_mRNA) - ((Kr_Make_GFP * GFP_Inside) * GFP_mRNA))</Function>
+        <Function Name="J_Make_LuxI" Domain="Compartment">((Kf_Make_LuxI * LuxI_mRNA) - ((Kr_Make_LuxI * LuxI) * LuxI_mRNA))</Function>
+        <Function Name="J_Make_LuxI_mRNA" Domain="Compartment">((Kf_Make_LuxI_mRNA * PFOA_prmA_Cplx) - ((Kr_Make_LuxI_mRNA * LuxI_mRNA) * PFOA_prmA_Cplx))</Function>
+        <Function Name="J_Make_LuxR" Domain="Compartment">((Kf_Make_LuxR * LuxR_mRNA) - ((Kr_Make_LuxR * LuxR_mRNA) * LuxRinCell))</Function>
+        <Function Name="J_Make_LuxRmRNA" Domain="Compartment">((Kf_Make_LuxRmRNA * luxR_gene) - ((Kr_Make_LuxRmRNA * LuxR_mRNA) * luxR_gene))</Function>
+        <Function Name="J_PFAS_BindprmA" Domain="Compartment">(((Kf_PFAS_BindprmA * PFAS_Inside) * prmA_Operon) - (Kr_PFAS_BindprmA * PFOA_prmA_Cplx))</Function>
+        <Function Name="J_PFAS_DiffusionAndMessenger" Domain="Compartment">((Kf_PFAS_DiffusionAndMessenger * PFAS_outside) - (Kr_PFAS_DiffusionAndMessenger * PFAS_Inside))</Function>
+        <Function Name="J_pLux_leak" Domain="Compartment">((Kf_pLux_leak * pLux_operon) - ((Kr_pLux_leak * GFP_mRNA) * pLux_operon))</Function>
+        <Function Name="J_prmA_leak" Domain="Compartment">((Kf_prmA_leak * prmA_Operon) - ((Kr_prmA_leak * LuxI_mRNA) * prmA_Operon))</Function>
+        <Function Name="Kf_Express_pLux_Operon" Domain="Compartment">(50.0 / burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_3OC6HSL" Domain="Compartment">(0.04 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxI" Domain="Compartment">(0.00578333333333 * burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxI_mRNA" Domain="Compartment">(50.0 / burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxR" Domain="Compartment">(0.00578333333333 * burstSize1 / 60.0)</Function>
+        <Function Name="Kf_Make_LuxRmRNA" Domain="Compartment">(200.0 / burstSize1 / 60.0)</Function>
+        <Function Name="LuxI" Domain="Compartment">((LuxI_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="LuxI_mRNA" Domain="Compartment">((LuxI_mRNA_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="LuxR_3OC6HSL" Domain="Compartment">((LuxR_3OC6HSL_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="LuxR_3OC6HSL_dimer" Domain="Compartment">((LuxR_3OC6HSL_dimer_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="luxR_gene" Domain="Compartment">((UnitFactor_uM_um3_molecules_neg_1 * luxR_gene_Count) / Size_Cell)</Function>
+        <Function Name="LuxR_mRNA" Domain="Compartment">((LuxR_mRNA_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="LuxR_pLux_Cplx" Domain="Compartment">((LuxR_pLux_Cplx_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="LuxRinCell" Domain="Compartment">((LuxRinCell_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="P__3OC6HSLdiffusion_probabilityRate" Domain="Compartment">(Kf__3OC6HSLdiffusion * _3OC6HSL_out_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P__3OC6HSLdiffusion_reverse_probabilityRate" Domain="Compartment">(Kr__3OC6HSLdiffusion * _3OC6HSL_inside_Count * Size_Environment * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P__AHL_LuxR_2_formation_probabilityRate" Domain="Compartment">(Kf___AHL_LuxR_2_formation * LuxR_3OC6HSL_Count * ( - 1.0 + LuxR_3OC6HSL_Count) * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P__AHL_LuxR_2_formation_reverse_probabilityRate" Domain="Compartment">(Kr___AHL_LuxR_2_formation * LuxR_3OC6HSL_dimer_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_AHL_degradation_probabilityRate" Domain="Compartment">(Kf_AHL_degradation * _3OC6HSL_inside_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_AHL_degradation_reverse_probabilityRate" Domain="Compartment">(Kr_AHL_degradation * degraded_ahl_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Bind_LuxR_probabilityRate" Domain="Compartment">(Kf_Bind_LuxR * _3OC6HSL_inside_Count * LuxRinCell_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Bind_LuxR_reverse_probabilityRate" Domain="Compartment">(Kr_Bind_LuxR * LuxR_3OC6HSL_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Bind_pLux_probabilityRate" Domain="Compartment">(Kf_Bind_pLux * LuxR_3OC6HSL_dimer_Count * pLux_operon_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Bind_pLux_reverse_probabilityRate" Domain="Compartment">(Kr_Bind_pLux * LuxR_pLux_Cplx_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Deg_LuxImRNA_probabilityRate" Domain="Compartment">(Kf_Deg_LuxImRNA * LuxI_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Deg_LuxImRNA_reverse_probabilityRate" Domain="Compartment">(Kr_Deg_LuxImRNA * Degr_LuxImRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degr_GFPmRNA_probabilityRate" Domain="Compartment">(Kf_Degr_GFPmRNA * GFP_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degr_GFPmRNA_reverse_probabilityRate" Domain="Compartment">(Kr_Degr_GFPmRNA * Deg_GFPmRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_GFP_probabilityRate" Domain="Compartment">(Kf_Degrade_GFP * GFP_Inside_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_GFP_reverse_probabilityRate" Domain="Compartment">(Kr_Degrade_GFP * DegradedGFP_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_LuxR_3OC_probabilityRate" Domain="Compartment">(Kf_Degrade_LuxR_3OC * LuxR_3OC6HSL_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_LuxR_3OC_reverse_probabilityRate" Domain="Compartment">(Kr_Degrade_LuxR_3OC * DegradedLuxR_AHL_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_LuxR_AHL_dimer_probabilityRate" Domain="Compartment">(Kf_Degrade_LuxR_AHL_dimer * LuxR_3OC6HSL_dimer_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_LuxR_AHL_dimer_reverse_probabilityRate" Domain="Compartment">(Kr_Degrade_LuxR_AHL_dimer * DegradedLuxR_AHL_Dimer_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_LuxRmRNA_probabilityRate" Domain="Compartment">(Kf_Degrade_LuxRmRNA * LuxR_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Degrade_LuxRmRNA_reverse_probabilityRate" Domain="Compartment">(Kr_Degrade_LuxRmRNA * DegmRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_DegradeLuxI_probabilityRate" Domain="Compartment">(Kf_DegradeLuxI * LuxI_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_DegradeLuxI_reverse_probabilityRate" Domain="Compartment">(Kr_DegradeLuxI * DegradedLuxI_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_DegradeLuxR_probabilityRate" Domain="Compartment">(Kf_DegradeLuxR * LuxRinCell_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_DegradeLuxR_reverse_probabilityRate" Domain="Compartment">(Kr_DegradeLuxR * DegradedLuxR_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Express_pLux_Operon_probabilityRate" Domain="Compartment">(5.0 * LuxR_pLux_Cplx_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 / (6.0 * burstSize1))</Function>
+        <Function Name="P_Express_pLux_Operon_reverse_probabilityRate" Domain="Compartment">(Kr_Express_pLux_Operon * GFP_mRNA_Count * LuxR_pLux_Cplx_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Make_3OC6HSL_probabilityRate" Domain="Compartment">(Kf_Make_3OC6HSL * LuxI_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Make_3OC6HSL_reverse_probabilityRate" Domain="Compartment">(Kr_Make_3OC6HSL * _3OC6HSL_inside_Count * LuxI_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Make_GFP_probabilityRate" Domain="Compartment">(Kf_Make_GFP * GFP_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Make_GFP_reverse_probabilityRate" Domain="Compartment">(Kr_Make_GFP * GFP_Inside_Count * GFP_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Make_LuxI_mRNA_probabilityRate" Domain="Compartment">(5.0 * PFOA_prmA_Cplx_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 / (6.0 * burstSize1))</Function>
+        <Function Name="P_Make_LuxI_mRNA_reverse_probabilityRate" Domain="Compartment">(Kr_Make_LuxI_mRNA * LuxI_mRNA_Count * PFOA_prmA_Cplx_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Make_LuxI_probabilityRate" Domain="Compartment">(9.638888888883333E-5 * burstSize1 * LuxI_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Make_LuxI_reverse_probabilityRate" Domain="Compartment">(Kr_Make_LuxI * LuxI_Count * LuxI_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Make_LuxR_probabilityRate" Domain="Compartment">(9.638888888883335E-5 * burstSize1 * LuxR_mRNA_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_Make_LuxR_reverse_probabilityRate" Domain="Compartment">(6.666054244863097E-21 * ((1.5001378075652568E20 * Kr_Make_LuxR) + burstSize1) * LuxR_mRNA_Count * LuxRinCell_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_Make_LuxRmRNA_probabilityRate" Domain="Compartment">(10.0 * luxR_gene_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 / (3.0 * burstSize1))</Function>
+        <Function Name="P_Make_LuxRmRNA_reverse_probabilityRate" Domain="Compartment">(Kr_Make_LuxRmRNA * LuxR_mRNA_Count * luxR_gene_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_PFAS_BindprmA_probabilityRate" Domain="Compartment">(Kf_PFAS_BindprmA * PFAS_Inside_Count * prmA_Operon_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_PFAS_BindprmA_reverse_probabilityRate" Domain="Compartment">(Kr_PFAS_BindprmA * PFOA_prmA_Cplx_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_PFAS_DiffusionAndMessenger_probabilityRate" Domain="Compartment">(Kf_PFAS_DiffusionAndMessenger * PFAS_outside_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_PFAS_DiffusionAndMessenger_reverse_probabilityRate" Domain="Compartment">(Kr_PFAS_DiffusionAndMessenger * PFAS_Inside_Count * Size_Environment * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_pLux_leak_probabilityRate" Domain="Compartment">(Kf_pLux_leak * pLux_operon_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_pLux_leak_reverse_probabilityRate" Domain="Compartment">(Kr_pLux_leak * GFP_mRNA_Count * pLux_operon_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="P_prmA_leak_probabilityRate" Domain="Compartment">(Kf_prmA_leak * prmA_Operon_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1)</Function>
+        <Function Name="P_prmA_leak_reverse_probabilityRate" Domain="Compartment">(Kr_prmA_leak * LuxI_mRNA_Count * prmA_Operon_Count * UnitFactor_molecules_uM_neg_1_um_neg_3 * UnitFactor_uM_um3_molecules_neg_1 * UnitFactor_uM_um3_molecules_neg_1 / Size_Cell)</Function>
+        <Function Name="PFAS_Inside" Domain="Compartment">((PFAS_Inside_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="PFAS_outside" Domain="Compartment">((PFAS_outside_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Environment)</Function>
+        <Function Name="PFOA_prmA_Cplx" Domain="Compartment">((PFOA_prmA_Cplx_Count * UnitFactor_uM_um3_molecules_neg_1) / Size_Cell)</Function>
+        <Function Name="pLux_operon" Domain="Compartment">((UnitFactor_uM_um3_molecules_neg_1 * pLux_operon_Count) / Size_Cell)</Function>
+        <Function Name="prmA_Operon" Domain="Compartment">((UnitFactor_uM_um3_molecules_neg_1 * prmA_Operon_Count) / Size_Cell)</Function>
+        <CompartmentSubDomain Name="Compartment">
+          <BoundaryType Boundary="Xm" Type="Value" />
+          <BoundaryType Boundary="Xp" Type="Value" />
+          <BoundaryType Boundary="Ym" Type="Value" />
+          <BoundaryType Boundary="Yp" Type="Value" />
+          <BoundaryType Boundary="Zm" Type="Value" />
+          <BoundaryType Boundary="Zp" Type="Value" />
+          <VariableInitialCount Name="LuxRinCell_Count">LuxRinCell_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="luxR_gene_Count">luxR_gene_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="_3OC6HSL_inside_Count">_3OC6HSL_inside_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="GFP_Inside_Count">GFP_Inside_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="pLux_operon_Count">pLux_operon_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="PFAS_Inside_Count">PFAS_Inside_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="prmA_Operon_Count">prmA_Operon_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="LuxI_Count">LuxI_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="DegradedGFP_Count">DegradedGFP_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="DegradedLuxI_Count">DegradedLuxI_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="DegradedLuxR_Count">DegradedLuxR_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="LuxR_pLux_Cplx_Count">LuxR_pLux_Cplx_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="PFOA_prmA_Cplx_Count">PFOA_prmA_Cplx_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="LuxI_mRNA_Count">LuxI_mRNA_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="GFP_mRNA_Count">GFP_mRNA_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="LuxR_mRNA_Count">LuxR_mRNA_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="DegmRNA_Count">DegmRNA_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="Degr_LuxImRNA_Count">Degr_LuxImRNA_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="Deg_GFPmRNA_Count">Deg_GFPmRNA_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="LuxR_3OC6HSL_Count">LuxR_3OC6HSL_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="DegradedLuxR_AHL_Count">DegradedLuxR_AHL_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="LuxR_3OC6HSL_dimer_Count">LuxR_3OC6HSL_dimer_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="degraded_ahl_Count">degraded_ahl_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="DegradedLuxR_AHL_Dimer_Count">DegradedLuxR_AHL_Dimer_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="PFAS_outside_Count">PFAS_outside_Count_initCount</VariableInitialCount>
+          <VariableInitialCount Name="_3OC6HSL_out_Count">_3OC6HSL_out_Count_initCount</VariableInitialCount>
+          <JumpProcess Name="Make_LuxR">
+            <ProbabilityRate>P_Make_LuxR_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_mRNA_Count" Operation="inc">0.0</Effect>
+            <Effect VarName="LuxRinCell_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxR_reverse">
+            <ProbabilityRate>P_Make_LuxR_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_mRNA_Count" Operation="inc">0.0</Effect>
+            <Effect VarName="LuxRinCell_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="_3OC6HSLdiffusion">
+            <ProbabilityRate>P__3OC6HSLdiffusion_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_out_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="_3OC6HSLdiffusion_reverse">
+            <ProbabilityRate>P__3OC6HSLdiffusion_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_out_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Bind_LuxR">
+            <ProbabilityRate>P_Bind_LuxR_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="LuxRinCell_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="LuxR_3OC6HSL_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Bind_LuxR_reverse">
+            <ProbabilityRate>P_Bind_LuxR_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="LuxRinCell_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="LuxR_3OC6HSL_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Express_pLux_Operon">
+            <ProbabilityRate>P_Express_pLux_Operon_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="LuxR_pLux_Cplx_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Express_pLux_Operon_reverse">
+            <ProbabilityRate>P_Express_pLux_Operon_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="LuxR_pLux_Cplx_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="PFAS_DiffusionAndMessenger">
+            <ProbabilityRate>P_PFAS_DiffusionAndMessenger_probabilityRate</ProbabilityRate>
+            <Effect VarName="PFAS_outside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="PFAS_Inside_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="PFAS_DiffusionAndMessenger_reverse">
+            <ProbabilityRate>P_PFAS_DiffusionAndMessenger_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="PFAS_outside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="PFAS_Inside_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxI">
+            <ProbabilityRate>P_Make_LuxI_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxI_reverse">
+            <ProbabilityRate>P_Make_LuxI_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_3OC6HSL">
+            <ProbabilityRate>P_Make_3OC6HSL_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="LuxI_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_3OC6HSL_reverse">
+            <ProbabilityRate>P_Make_3OC6HSL_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="LuxI_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_GFP">
+            <ProbabilityRate>P_Degrade_GFP_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_Inside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="DegradedGFP_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_GFP_reverse">
+            <ProbabilityRate>P_Degrade_GFP_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_Inside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="DegradedGFP_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="DegradeLuxI">
+            <ProbabilityRate>P_DegradeLuxI_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="DegradedLuxI_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="DegradeLuxI_reverse">
+            <ProbabilityRate>P_DegradeLuxI_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="DegradedLuxI_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="DegradeLuxR">
+            <ProbabilityRate>P_DegradeLuxR_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxRinCell_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="DegradedLuxR_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="DegradeLuxR_reverse">
+            <ProbabilityRate>P_DegradeLuxR_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxRinCell_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="DegradedLuxR_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="PFAS_BindprmA">
+            <ProbabilityRate>P_PFAS_BindprmA_probabilityRate</ProbabilityRate>
+            <Effect VarName="PFAS_Inside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="prmA_Operon_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="PFOA_prmA_Cplx_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="PFAS_BindprmA_reverse">
+            <ProbabilityRate>P_PFAS_BindprmA_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="PFAS_Inside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="prmA_Operon_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="PFOA_prmA_Cplx_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxI_mRNA">
+            <ProbabilityRate>P_Make_LuxI_mRNA_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="PFOA_prmA_Cplx_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxI_mRNA_reverse">
+            <ProbabilityRate>P_Make_LuxI_mRNA_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="PFOA_prmA_Cplx_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_GFP">
+            <ProbabilityRate>P_Make_GFP_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_Inside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_GFP_reverse">
+            <ProbabilityRate>P_Make_GFP_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_Inside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxRmRNA">
+            <ProbabilityRate>P_Make_LuxRmRNA_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="luxR_gene_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Make_LuxRmRNA_reverse">
+            <ProbabilityRate>P_Make_LuxRmRNA_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="luxR_gene_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_LuxRmRNA">
+            <ProbabilityRate>P_Degrade_LuxRmRNA_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="DegmRNA_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_LuxRmRNA_reverse">
+            <ProbabilityRate>P_Degrade_LuxRmRNA_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="DegmRNA_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Deg_LuxImRNA">
+            <ProbabilityRate>P_Deg_LuxImRNA_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="Degr_LuxImRNA_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Deg_LuxImRNA_reverse">
+            <ProbabilityRate>P_Deg_LuxImRNA_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="Degr_LuxImRNA_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degr_GFPmRNA">
+            <ProbabilityRate>P_Degr_GFPmRNA_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="Deg_GFPmRNA_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degr_GFPmRNA_reverse">
+            <ProbabilityRate>P_Degr_GFPmRNA_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="Deg_GFPmRNA_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_LuxR_3OC">
+            <ProbabilityRate>P_Degrade_LuxR_3OC_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="DegradedLuxR_AHL_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_LuxR_3OC_reverse">
+            <ProbabilityRate>P_Degrade_LuxR_3OC_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="DegradedLuxR_AHL_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="_AHL_LuxR_2_formation">
+            <ProbabilityRate>P__AHL_LuxR_2_formation_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_Count" Operation="inc">-2.0</Effect>
+            <Effect VarName="LuxR_3OC6HSL_dimer_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="_AHL_LuxR_2_formation_reverse">
+            <ProbabilityRate>P__AHL_LuxR_2_formation_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_Count" Operation="inc">2.0</Effect>
+            <Effect VarName="LuxR_3OC6HSL_dimer_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Bind_pLux">
+            <ProbabilityRate>P_Bind_pLux_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_dimer_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="pLux_operon_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="LuxR_pLux_Cplx_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Bind_pLux_reverse">
+            <ProbabilityRate>P_Bind_pLux_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_dimer_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="pLux_operon_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="LuxR_pLux_Cplx_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="prmA_leak">
+            <ProbabilityRate>P_prmA_leak_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="prmA_Operon_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="prmA_leak_reverse">
+            <ProbabilityRate>P_prmA_leak_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxI_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="prmA_Operon_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="AHL_degradation">
+            <ProbabilityRate>P_AHL_degradation_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="degraded_ahl_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="AHL_degradation_reverse">
+            <ProbabilityRate>P_AHL_degradation_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="_3OC6HSL_inside_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="degraded_ahl_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="pLux_leak">
+            <ProbabilityRate>P_pLux_leak_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="pLux_operon_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="pLux_leak_reverse">
+            <ProbabilityRate>P_pLux_leak_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="GFP_mRNA_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="pLux_operon_Count" Operation="inc">0.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_LuxR_AHL_dimer">
+            <ProbabilityRate>P_Degrade_LuxR_AHL_dimer_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_dimer_Count" Operation="inc">-1.0</Effect>
+            <Effect VarName="DegradedLuxR_AHL_Dimer_Count" Operation="inc">1.0</Effect>
+          </JumpProcess>
+          <JumpProcess Name="Degrade_LuxR_AHL_dimer_reverse">
+            <ProbabilityRate>P_Degrade_LuxR_AHL_dimer_reverse_probabilityRate</ProbabilityRate>
+            <Effect VarName="LuxR_3OC6HSL_dimer_Count" Operation="inc">1.0</Effect>
+            <Effect VarName="DegradedLuxR_AHL_Dimer_Count" Operation="inc">-1.0</Effect>
+          </JumpProcess>
+        </CompartmentSubDomain>
+        <Version Name="Copy of Application0_generated" KeyValue="261666423" BranchId="259530230" Archived="0" Date="11-Oct-2023 20:59:25" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Copy of Application0_generated' owned by user seriously</Annotation>
+        </Version>
+      </MathDescription>
+      <Simulation Name="Simulation1">
+        <Annotation>cloned from 'Simulation1' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="Simulation1" KeyValue="261666533" BranchId="259530478" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Simulation1' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="NoPFAS_2 Scan Protein Deg">
+        <Annotation>cloned from 'NoPFAS_2 Scan Protein Deg' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="3600.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="NoPFAS_2 Scan Protein Deg" KeyValue="261666535" BranchId="259530481" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'NoPFAS_2 Scan Protein Deg' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="NoPFAS_2">
+        <Annotation>cloned from 'NoPFAS_2' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="NoPFAS_2" KeyValue="261666537" BranchId="259530484" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'NoPFAS_2' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="Copy of Simulation1 Sweep">
+        <Annotation>cloned from 'Copy of Simulation1 Sweep' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_Count_initCount" ConstantArraySpec="1000">"((30.0 * Size_Environment) / KMOLE)", "((3.0 * Size_Environment) / KMOLE)", "((0.3 * Size_Environment) / KMOLE)", "((0.03 * Size_Environment) / KMOLE)", "((0.003 * Size_Environment) / KMOLE)"</Constant>
+        </MathOverrides>
+        <Version Name="Copy of Simulation1 Sweep" KeyValue="261666539" BranchId="259530487" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Copy of Simulation1 Sweep' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="Simulation1 Sweep Hi LuxR">
+        <Annotation>cloned from 'Simulation1 Sweep Hi LuxR' owned by user seriously</Annotation>
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_outside_Count_initCount" ConstantArraySpec="1000">"((30.0 * Size_Environment) / KMOLE)", "((3.0 * Size_Environment) / KMOLE)", "((0.3 * Size_Environment) / KMOLE)", "((0.03 * Size_Environment) / KMOLE)", "((0.003 * Size_Environment) / KMOLE)"</Constant>
+          <Constant Name="LuxR_mRNA_Count_initCount">5000.0</Constant>
+        </MathOverrides>
+        <Version Name="Simulation1 Sweep Hi LuxR" KeyValue="261666541" BranchId="259530490" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <Annotation>cloned from 'Simulation1 Sweep Hi LuxR' owned by user seriously</Annotation>
+        </Version>
+      </Simulation>
+      <Simulation Name="Simulation3">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="36000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="1.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_Inside_Count_initCount" ConstantArraySpec="1000">"0.0", "1000.0", "10000.0", "100000.0"</Constant>
+        </MathOverrides>
+        <Version Name="Simulation3" KeyValue="261666543" BranchId="261665163" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <ParentSimRef KeyValue="261665162" />
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS 0.3 uM">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_Inside_Count_initCount">9345794.392523363</Constant>
+        </MathOverrides>
+        <Version Name="PFAS 0.3 uM" KeyValue="261666545" BranchId="261666546" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS 1uM">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_Inside_Count_initCount">3.115264797507788E7</Constant>
+        </MathOverrides>
+        <Version Name="PFAS 1uM" KeyValue="261666548" BranchId="261666549" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="FPAS 0.03 uM">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_Inside_Count_initCount">934579.4392523363</Constant>
+        </MathOverrides>
+        <Version Name="FPAS 0.03 uM" KeyValue="261666551" BranchId="261666552" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS 3uM">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_Inside_Count_initCount">9.345794392523363E7</Constant>
+        </MathOverrides>
+        <Version Name="PFAS 3uM" KeyValue="261666554" BranchId="261666555" Archived="0" Date="11-Oct-2023 20:59:26" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="Copy of PFAS 30uM">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides>
+          <Constant Name="PFAS_Inside_Count_initCount">9.345794392523363E8</Constant>
+        </MathOverrides>
+        <Version Name="Copy of PFAS 30uM" KeyValue="261671842" BranchId="261671843" Archived="0" Date="12-Oct-2023 00:06:36" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+        </Version>
+      </Simulation>
+      <Simulation Name="PFAS 0uM">
+        <SolverTaskDescription TaskType="Unsteady" UseSymbolicJacobian="false" Solver="Gibson (Next Reaction Stochastic Method)">
+          <TimeBound StartTime="0.0" EndTime="10000.0" />
+          <TimeStep DefaultTime="0.1" MinTime="1.0E-8" MaxTime="1.0" />
+          <ErrorTolerance Absolut="1.0E-9" Relative="1.0E-8" />
+          <StochSimOptions UseCustomSeed="false" NumberOfTrial="1" Histogram="false" />
+          <OutputOptions OutputTimeStep="10.0" />
+          <NumberProcessors>1</NumberProcessors>
+        </SolverTaskDescription>
+        <MathOverrides />
+        <Version Name="PFAS 0uM" KeyValue="261708299" BranchId="261708300" Archived="0" Date="12-Oct-2023 19:40:25" FromVersionable="false">
+          <Owner Name="dglVcell" Identifier="202231687" />
+          <GroupAccess Type="1" />
+          <ParentSimRef KeyValue="261676557" />
+        </Version>
+      </Simulation>
+      <Version Name="Stochastic" KeyValue="266648707" BranchId="259530406" Archived="0" Date="19-Jan-2024 18:00:31" FromVersionable="false">
+        <Owner Name="dglVcell" Identifier="202231687" />
+        <GroupAccess Type="1" />
+        <Annotation>cloned from 'Stochastic' owned by user seriously
+(copied from Application0)</Annotation>
+      </Version>
+      <MicroscopeMeasurement Name="fluor">
+        <ConvolutionKernel Type="ProjectionZKernel" />
+      </MicroscopeMeasurement>
+    </SimulationSpec>
+    <Version Name="PFAS Detectorv3_dgl" KeyValue="266648761" BranchId="261605797" Archived="0" Date="19-Jan-2024 18:00:32" FromVersionable="false">
+      <Owner Name="dglVcell" Identifier="202231687" />
+      <GroupAccess Type="0" />
+      <Annotation>cloned from 'PFAS Detectorv2' owned by user seriously</Annotation>
+    </Version>
+    <pathwayModel>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" version="3.0" />
+    </pathwayModel>
+    <relationshipModel>
+      <RMNS version="3.0" />
+    </relationshipModel>
+    <vcmetadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <rdf:Description rdf:about="http://sourceforge.net/projects/vcell/vcml/cbit.vcell.model.SimpleReaction/metaid_930146561">
+          <bqmodel:isDescribedBy xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Bag rdf:nodeID="node0">
+              <rdf:_1>
+                <rdf:Description rdf:about="urn:miriam:pubmed:PMC4162443+" />
+              </rdf:_1>
+            </rdf:Bag>
+          </bqmodel:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+      <nonrdfAnnotationList>
+        <nonrdfAnnotation vcid="Structure(Cell)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Deg_LuxImRNA)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(PFAS_DiffusionAndMessenger)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    This is a rough first approximation of the unknown mechanisms for 
+    activating prmA 
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="MolecularType(prmA_Operon)">
+          <freetext>&lt;html&gt;&#xD;
+  &lt;head&gt;&#xD;
+    &#xD;
+  &lt;/head&gt;&#xD;
+  &lt;body&gt;&#xD;
+    &lt;p style="margin-top: 0"&gt;&#xD;
+      An inducible promoter.&#xD;
+    &lt;/p&gt;&#xD;
+    &lt;span charset="utf-8" id="docs-internal-guid-481be98a-7fff-c605-f820-d9680e9ed314" style="font-variant: normal; white-space: pre-wrap"&gt;&lt;font size="12pt" face="Times New Roman" color="#000000"&gt;propane &#xD;
+    2-monooxygenase alpha (prmA) promoter&lt;/font&gt;&lt;/span&gt;&#xD;
+&#xD;
+    &lt;p style="margin-top: 0"&gt;&#xD;
+      Responds to PFAS&#xD;
+    &lt;/p&gt;&#xD;
+  &lt;/body&gt;&#xD;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="Species(s8)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="MolecularType(PFOA)">
+          <freetext>&lt;html&gt;&#xD;
+  &lt;head&gt;&#xD;
+&#xD;
+  &lt;/head&gt;&#xD;
+  &lt;body&gt;&#xD;
+    &lt;p style="margin-top: 0"&gt;&#xD;
+      Perflourocarbon Perfluoro ... &#xD;
+    &lt;/p&gt;&#xD;
+  &lt;/body&gt;&#xD;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="MolecularType(Precursors_to_3OC6HSL)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    S-adenosyl methionine (SAM) and hexanoyl-acyl carrier protein (ACP)
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Make_3OC6HSL)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf says 0.04 per 
+    min https://2019.igem.org/Team:NCTU_Formosa/QS_Model says either 0.05 or 
+    0.65 (probably per minute)
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/ 0.04/min
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Make_LuxI_mRNA)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    estimated 643 bp, transcription rate of 10bp/sec
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="MolecularType(_3OC6HSL)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;span&gt;3-oxohexanoyl-homoserine lactone https://parts.igem.org/3OC6HSL &lt;/span&gt;&lt;b&gt;Synthase:&lt;/b&gt; 
+    LuxI&lt;br&gt;&lt;b&gt;Action:&lt;/b&gt; Binds to the LuxR gene product of the &lt;a href="https://parts.igem.org/Lux" title="Lux"&gt;Lux&lt;/a&gt; 
+    operon. The resulting complex can bind to the lux box and modulate 
+    transcription from the lux promoters.
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Bind_pLux)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf 
+    has big disagreement with https://2019.igem.org/Team:NCTU_Formosa/QS_Model 
+    former says KD of 100 molecules(?) and latter says kf=0.05 and kr=0.0062
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/ says 
+    (10/60)/200nM=0.83333 for forward and 10/60 for backward
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Make_LuxR)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    Paper reported LuxR generation at 1200/hr 0.333/s but this was from gene 
+    to protein. So not exactly the same.. 
+    https://pubmed.ncbi.nlm.nih.gov/25379076/ 
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4162443/
+
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Modeling and validation of autoinducer-mediated bacterial gene 
+      expression in microfluidic environments
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Caitlin M. Austin,1 William Stoy,2 Peter Su,3 Marie C. Harber,1 J. 
+      Patrick Bardill,4 Brian K. Hammer,4 and Craig R. Forest1
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Yet at a rate of about 15 amino acids/ second with LuxR about 750 nt 
+      gives 750/3 = 250 aa or a time of 14 sec to make 1 LuxR for a rate of 
+      1/14 sec = 0.0714 /s
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      IF I assume about 15 sec / protein from an mRNA then I get 1/15= 0.0667 
+      /s
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      The above assumption is measured in this paper
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://www.nature.com/articles/s41467-020-18948-x#Sec2
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Express_pLux_Operon)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://2019.igem.org/Team:NCTU_Formosa/QS_Model
+Here transcription rate of mRFP mRNA is 0.03 (i think /minute)
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Bind_LuxR)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      {From
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Modeling and validation of autoinducer-mediated bacterial gene 
+      expression in microfluidic environments
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Caitlin M. Austin,1 William Stoy,2 Peter Su,3 Marie C. Harber,1 J. 
+      Patrick Bardill,4 Brian K. Hammer,4 and Craig R. Forest1
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      They give 60/hr for forward and reverse? reactions. Okay... 60/hr = 
+      60/3600 /s = 1/60 /s = 0.0166 s^-1} &amp;lt;= former
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      computed from dissociation constant (kf=1, kr=dissociation 
+      constant(10/min))
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC321501/
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      says &amp;quot;the effective equilibirum constant for formation of this complex 
+      to be approximately 100nM&amp;quot;
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://2019.igem.org/Team:NCTU_Formosa/QS_Model say kf=0.005/min, 
+      kr=0.05/min
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/ says (10/60)/(.1)=
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="Species(s3)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="MolecularType(LuxI)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;span charset="utf-8" id="docs-internal-guid-d3dacf09-7fff-32f6-3cac-59772ce480a4" style="font-variant: normal; white-space: pre-wrap"&gt;&lt;font size="12pt" face="Times New Roman" color="#000000"&gt;autoinducer 
+    synthase,&lt;/font&gt;&lt;/span&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="SimulationContext(Application0)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Make_GFP)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    From the paper https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4162443/ GFP 
+    protein production from gene to immature (?) GFP with active promoter was 
+    150/hr and another 3.6 /hr to get to the mature version I will use 150/hr 
+    = 150/hr *1hr/3600 sec= 0.04166/sec
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(&amp;lpar;AHL.LuxR&amp;rpar;2 formation)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf 
+    says kd is 20 molecules while 
+    https://2019.igem.org/Team:NCTU_Formosa/QS_Model says kf=0.003 and 
+    kr=0.03, ratios off by a factor of 2 
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/ says 
+    (1/60)/0.02=0.8333
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Make_LuxRmRNA)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(_3OC6HSLdiffusion)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    Free to diffuse in or out.  The rate used in 
+&lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4162443/"&gt;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4162443/&lt;/a&gt;
+ 
+Was 3600/hr = 1/s 
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Degrade_LuxR_3OC)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf 
+    (0.156 / 60.0) https://2019.igem.org/Team:NCTU_Formosa/QS_Model says 0.2
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/ 
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="MolecularType(LuxR)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://parts.igem.org/3OC6HSL LuxR is a constitutively expressed protein 
+    that can bind AHL. When bound to AHL it can stimulate transcription from 
+    the right hand lux promoter (pLuxR). In the natural system, this promoter 
+    controls transcription of the LuxI enzyme leading to a positive feedback 
+    loop that increases transcription from the right hand lux promoter. In 
+    addition controlling the transcription of luxI, the promoter also controls 
+    transcription of luciferase.
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="Species(s5)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(DegradeLuxR)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Degrade_LuxR_AHL_dimer)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Make_LuxI)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf 
+    The translation rate can be tuned using ribosome-binding site (RBS) of 
+    different strengths. In bacteria, the translation rate is &amp;#8776; 30-60 bp/sec 
+    and the average number of ribosomes per cell (in the exponential phase) to 
+    translate one mRNA is &amp;#8776; 9 units.
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(DegradeLuxI)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3614889/
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="Species(s15)">
+          <freetext>&lt;html&gt;&#xD;
+  &lt;head&gt;&#xD;
+&#xD;
+  &lt;/head&gt;&#xD;
+  &lt;body&gt;&#xD;
+    &lt;p style="margin-top: 0"&gt;&#xD;
+      This stands in for whatever signal cascade ends up activating the prmA &#xD;
+      operon&#xD;
+    &lt;/p&gt;&#xD;
+  &lt;/body&gt;&#xD;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Degrade_GFP)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    Was halflife of 2 hrs but substituted for 4.15/hr or 0.00115/s From 
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4162443/
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(Degrade_LuxRmRNA)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://www.biorxiv.org/content/biorxiv/early/2017/02/06/106229.full.pdf
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="BioModel(PFAS Detectorv3_dgl)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;span charset="utf-8" id="docs-internal-guid-56d614bb-7fff-f097-86b7-9357a5f99630" style="font-variant: normal; white-space: pre-wrap"&gt;&lt;font size="11pt" face="Arial" color="#000000"&gt;This 
+    model is meant to simulate 
+    const-(RBS)-LuxR-(stop)-prmA--(RBS)-LuxI-(stop)-pLux-GFP-(stop): Maybe a 
+    better way is to write it as 
+    prmA--(RBS)-LuxI-(stop)-const-(RBS)-LuxR-(stop)-pLux-GFP-(stop) &lt;/font&gt;&lt;/span&gt;References 
+    Rate constants:
+
+    &lt;div class="half_rhythm"&gt;
+      &lt;div class="contrib-group fm-author"&gt;
+        https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4162443/
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Modeling and validation of autoinducer-mediated bacterial gene 
+      expression in microfluidic environments
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      Caitlin M. Austin,1 William Stoy,2 Peter Su,3 Marie C. Harber,1 J. 
+      Patrick Bardill,4 Brian K. Hammer,4 and Craig R. Forest1
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      https://www.nature.com/articles/s41467-020-18948-x#Sec2
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="ReactionStep(prmA_leak)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    leaky
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+        <nonrdfAnnotation vcid="SimulationContext(Stochastic)">
+          <freetext>&lt;html&gt;
+  &lt;head&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p style="margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in"&gt;
+      
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</freetext>
+        </nonrdfAnnotation>
+      </nonrdfAnnotationList>
+      <uriBindingList>
+        <uriBinding uri="http://sourceforge.net/projects/vcell/vcml/cbit.vcell.model.SimpleReaction/metaid_930146561" vcid="ReactionStep(Make_LuxR)" />
+      </uriBindingList>
+    </vcmetadata>
+  </BioModel>
+</vcml>
+
